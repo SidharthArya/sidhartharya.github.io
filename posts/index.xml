@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Sidharth Arya</title>
+        <link>/posts/</link>
+        <description>All Posts | Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 31 May 2021 10:35:10 &#43;0530</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First_post</title>
+    <link>/first_post/</link>
+    <pubDate>Mon, 31 May 2021 10:35:10 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>/first_post/</guid>
+    <description><![CDATA[Hello World]]></description>
+</item></channel>
+</rss>
