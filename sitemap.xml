@@ -2,10 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/hello/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/hello/</loc><lastmod>2021-06-01T09:10:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/first_post/</loc><lastmod>2021-05-31T11:08:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>/posts/</loc><lastmod>2021-05-31T11:08:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>/</loc><lastmod>2021-05-31T11:08:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/posts/</loc><lastmod>2021-06-01T09:10:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/</loc><lastmod>2021-06-01T09:10:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>/tags/world/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>/tags/</loc><lastmod>2021-06-01T09:10:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/tags/world/</loc><lastmod>2021-06-01T09:10:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
