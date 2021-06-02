@@ -11,7 +11,7 @@ In any case, over time i will try to sell my blog better, but for now this is al
 **This is a place for anyone willing to learn and grow with me.**
 
 
-## Topics I hope to write on {#topics-i-hope-to-write-on}
+#### Topics I hope to write on {#topics-i-hope-to-write-on}
 
 This blog is going to be about a lot of things over time.
 
@@ -27,14 +27,21 @@ This blog is going to be about a lot of things over time.
 -   Introversion
 
 These are probably the main few topics i will deal with. I know this is quite a lot. If you want to subscribe to a subset of these, that is possible too, by using RSS Feeds.
-You can easily add rss feeds to your outlook accout or feedly, or even feeder app.
+You can easily add rss feeds to your outlook account, feedly, or even feeder app.
+
+You can follow me on:
 
 
-## Blog Specification {#blog-specification}
+#### Blog Specification {#blog-specification}
 
 This blog is powered by [Hugo](https://gohugo.io/)
 
 Feel free to use the comment section down below powered by [Disqus](https://disqus.com/)
 
-Search engine is powered by lunr.js
+Search engine is powered by lunr.js (NO\_ITEM\_DATA:liu21:\_swin\_trans)
+
+
+## Bibliography {#bibliography}
+
+NO\_ITEM\_DATA:liu21:\_swin\_trans
 
