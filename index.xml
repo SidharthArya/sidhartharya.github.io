@@ -4,21 +4,7 @@
         <link>/</link>
         <description>Sidharth Arya&#39;s Personal Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 31 May 2021 10:35:10 &#43;0530</lastBuildDate>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>Hello</title>
-    <link>/hello/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>/hello/</guid>
-    <description><![CDATA[Hello World]]></description>
-</item><item>
-    <title>First_post</title>
-    <link>/first_post/</link>
-    <pubDate>Mon, 31 May 2021 10:35:10 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>/first_post/</guid>
-    <description><![CDATA[Hello World]]></description>
-</item></channel>
+        </channel>
 </rss>
