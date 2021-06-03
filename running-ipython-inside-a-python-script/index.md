@@ -12,24 +12,26 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
 ```python
 # Some Threaded Code running in the background
 import IPython
-iPython.embed()
+IPython.embed()
 ```
 
 And you have an ipython shell running.
 
-On a similar note, your problem may require to run the code sequentially, rather than in parallel. In that case you can start ipython first, in a thread.
+Alternatively you can make use of an eval statement
 
 ```python
 # Put this at the top of your program
-import IPython
-import threading
-ipython = threading.Thread(target=IPython.embed)
-ipython.start()
+import readline
+def interactive_eval():
+    while True:
+        eval(input())
+i_eval = threading.Thread(target=interactive_eval)
+i_eval.start()
 
 # Follow up with rest of your program
 ```
 
-`embed` launch the shell in a particular calling scope, such as inside a function or method.
+Note: Make sure you end with `os.system('stty sane')`.
 
 
 ## References {#references}
