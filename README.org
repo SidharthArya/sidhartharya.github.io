@@ -1,0 +1,7 @@
+#+TITLE: My Website
+#+AUTHOR: Sidharth Arya
+
+Please Note that this is a self generating site. Do not try to replicate the content as is.
+I use hugo inorder to generate this site.
+A similar option would be Jekyll.
+Thank You for visiting.
