@@ -1,7 +1,7 @@
 # Running ipython inside a python script
 
 
-Imagine you are writing a very convoluted program with all sorts of threding magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?
+Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?
 
 
 ## An interactive shell within your script {#an-interactive-shell-within-your-script}
