@@ -19,7 +19,7 @@ So, what i do is i write a simple [qutebrowser userscript](https://qutebrowser.o
 
 ## Solution {#solution}
 
-1.  Create a file called localhost at ~/.local/share/qutebrowser/userscripts  or ~/.config/qutebrowser/userscripts.
+1.  Create a file called localhost at ~/.local/share/qutebrowser/userscripts (or ~/.config/qutebrowser/userscripts)
 2.  Write the code below in that file:
 
     ```bash
@@ -30,7 +30,8 @@ So, what i do is i write a simple [qutebrowser userscript](https://qutebrowser.o
     fi
     echo open localhost:$QUTE_COUNT > $QUTE_FIFO
     ```
-3.  Save the file and add a key combination for the script in your `config.py` usually placed at ~/.config/qutebrowser/config.py.
+3.  Save the file and change its permission to executable by runnign ~chmod +x ~/.local/share/qutebrowser/userscripts/localhost
+4.  add a key combination for the script in your `config.py` usually placed at ~/.config/qutebrowser/config.py.
 
     ```python
     config.bind('zl', 'spawn --userscript localhost')
