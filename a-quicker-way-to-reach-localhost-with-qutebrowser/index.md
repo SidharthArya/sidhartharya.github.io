@@ -43,6 +43,21 @@ If you need to go to <https://localhost:8080>. Type 8080zl in normal mode in qut
 8000 is the default port and so just typing zl would take you to <https://localhost:8000>.
 
 
+## Misc {#misc}
+
+You can instead choose to goto the last port used by writing to a file, as shown below
+
+```bash
+#!/bin/bash
+if [ -z $QUTE_COUNT ];
+then
+    QUTE_COUNT=$(cat /tmp/qutebrowser-localhost-port)
+fi
+echo open localhost:$QUTE_COUNT > $QUTE_FIFO
+echo $QUTE_COUNT >  /tmp/qutebrowser-localhost-port
+```
+
+
 ## References {#references}
 
 -   [qutebrowser | qutebrowser](https://qutebrowser.org/)
