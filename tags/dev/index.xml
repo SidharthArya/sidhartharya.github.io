@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>dev - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/dev/</link>
+        <description>dev - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/dev/" rel="self" type="application/rss+xml" /><item>
+    <title>A quicker way to reach localhost with qutebrowser</title>
+    <link>https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/</link>
+    <pubDate>Fri, 04 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/</guid>
+    <description><![CDATA[Qutebrowser Qutebrowser is the best web browser for developers, hands down. Nothing can compare to the flexibility it offers. Now, ofcourse other web browser must have ways of enabling and disabling various fancy features, but it&rsquo;s much harder to achieve.
+I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here (dotfiles/Browser/Qutebrowser/userscripts at master · SidharthArya/dotfiles ) on a daily basis.
+The Problem One of the issues i have sometimes is to reach localhost on various ports quickly.]]></description>
+</item></channel>
+</rss>
