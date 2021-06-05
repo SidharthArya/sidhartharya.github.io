@@ -4,7 +4,7 @@
         <link>https://sidhartharya.github.io/</link>
         <description>Sidharth Arya&#39;s Personal Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Jun 2021 14:47:16 &#43;0530</lastBuildDate>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Jun 2021 02:24:52 &#43;0530</lastBuildDate>
             <atom:link href="https://sidhartharya.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Running ipython inside a python script</title>

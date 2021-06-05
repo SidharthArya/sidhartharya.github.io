@@ -1,0 +1,13 @@
+# Frontal Lobe
+
+
+## Backlink {#backlink}
+
+
+### [Cerebrum]({{< relref "20210408090933-cerebrum" >}}) {#cerebrum--20210408090933-cerebrum-dot-md}
+
+
+#### Top {#top}
+
+[Frontal Lobe]({{< relref "20210408091012-frontal_lobe" >}})
+
