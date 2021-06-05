@@ -5,7 +5,7 @@
 
 [Qutebrowser](https://qutebrowser.org/) is the best web browser for developers, hands down. Nothing can compare to the flexibility it offers. Now, ofcourse other web browser must have ways of enabling and disabling various fancy features, but it's much harder to achieve.
 
-I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here ([dotfiles/Browser/Qutebrowser/userscripts at master · SidharthArya/dotfiles](https://github.com/SidharthArya/dotfiles/tree/master/Browser/Qutebrowser/userscripts)) on a daily basis.
+I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here ([SidharthArya/.qutebrowser](https://github.com/SidharthArya/.qutebrowser)) on a daily basis.
 
 
 ## The Problem {#the-problem}
@@ -24,11 +24,7 @@ So, what i do is i write a simple [qutebrowser userscript](https://qutebrowser.o
 
     ```bash
     #!/bin/bash
-    if [ -z $QUTE_COUNT ];
-    then
-        QUTE_COUNT=8080
-    fi
-    echo open localhost:$QUTE_COUNT > $QUTE_FIFO
+    echo open localhost:${QUTE_COUNT:-8000} > $QUTE_FIFO
     ```
 3.  Save the file and change its permission to executable by runnign ~chmod +x ~/.local/share/qutebrowser/userscripts/localhost
 4.  add a key combination for the script in your `config.py` usually placed at ~/.config/qutebrowser/config.py.

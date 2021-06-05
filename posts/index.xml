@@ -11,7 +11,7 @@
     <author>Author</author>
     <guid>https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/</guid>
     <description><![CDATA[Qutebrowser Qutebrowser is the best web browser for developers, hands down. Nothing can compare to the flexibility it offers. Now, ofcourse other web browser must have ways of enabling and disabling various fancy features, but it&rsquo;s much harder to achieve.
-I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here (dotfiles/Browser/Qutebrowser/userscripts at master · SidharthArya/dotfiles ) on a daily basis.
+I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here (SidharthArya/.qutebrowser ) on a daily basis.
 The Problem One of the issues i have sometimes is to reach localhost on various ports quickly.]]></description>
 </item><item>
     <title>Running ipython inside a python script</title>
