@@ -3,7 +3,7 @@
 
 ## Solutions {#solutions}
 
--   Apply [Curd]({{< relref "20210412053854-curd" >}})
+-   [Ketaconazole]({{< relref "20210606025045-ketaconazole" >}})
 
 
 ## No backlinks! {#no-backlinks}

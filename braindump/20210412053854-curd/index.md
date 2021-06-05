@@ -9,7 +9,7 @@
 
 #### Solutions {#solutions}
 
-Apply [Curd]({{< relref "20210412053854-curd" >}})
+Solutions
 
 
 ### [Panchamrit]({{< relref "20210412054031-panchamrit" >}}) {#panchamrit--20210412054031-panchamrit-dot-md}
