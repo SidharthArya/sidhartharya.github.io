@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Exporting Org Roam notes to hugo - Sidharth Arya</title><meta name="Description" content="Sidharth Arya&#39;s Personal Blog"><meta property="og:title" content="Exporting Org Roam notes to hugo" />
+<meta property="og:description" content="Before i start talking gibrish let&rsquo;s give special credits to jethrokuan (Jethro Kuan) for writing the org-roam package and kaushalmodi (Kaushal Modi) for ox-hugo exporter.
+Introduction GNU Emacs is truly an amazing software. It can work as a text editor, a news feed reader, email reader, IDE, and much more. One of the truly amazing things i found on emacs was Org mode . Org mode is really a markup language which has all sorts of amazing features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-05T00:00:00&#43;05:30" />
+<meta property="article:modified_time" content="2021-06-07T01:26:00&#43;05:30" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Exporting Org Roam notes to hugo"/>
+<meta name="twitter:description" content="Before i start talking gibrish let&rsquo;s give special credits to jethrokuan (Jethro Kuan) for writing the org-roam package and kaushalmodi (Kaushal Modi) for ox-hugo exporter.
+Introduction GNU Emacs is truly an amazing software. It can work as a text editor, a news feed reader, email reader, IDE, and much more. One of the truly amazing things i found on emacs was Org mode . Org mode is really a markup language which has all sorts of amazing features."/>
+<meta name="application-name" content="Sidharth Arya">
+<meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" /><link rel="prev" href="https://sidhartharya.github.io/running-ipython-inside-a-python-script/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Exporting Org Roam notes to hugo",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sidhartharya.github.io\/exporting-org-roam-notes-to-hugo\/"
+        },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1248 ,
+        "url": "https:\/\/sidhartharya.github.io\/exporting-org-roam-notes-to-hugo\/","datePublished": "2021-06-05T00:00:00+05:30","dateModified": "2021-06-07T01:26:00+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
+            "author": {
+                "@type": "Person",
+                "name": .Site.Author.name
+            },
+        "description": ""
+    }
+    </script><script data-ad-client="ca-pub-4788308835707864" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/braindump/index.html"> Braindump </a><a class="menu-item" href="https://github.com/SidharthArya" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/braindump/index.html" title="">Braindump</a><a class="menu-item" href="https://github.com/SidharthArya" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Exporting Org Roam notes to hugo</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="sidhartharya.me" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sidharth Arya</a>
+</span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-05">2021-06-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1248 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#configuring-ox-hugo-variables">Configuring ox-hugo variables</a></li>
+    <li><a href="#tag-processing">Tag Processing</a></li>
+    <li><a href="#backlinks-processing">Backlinks Processing</a></li>
+    <li><a href="#auto-export-on-save">Auto export on save</a></li>
+    <li><a href="#sync-all-org-roam-files">Sync all org roam files</a></li>
+    <li><a href="#misc">Misc</a>
+      <ul>
+        <li><a href="#my-auto-export-on-save">My Auto export on save</a></li>
+        <li><a href="#redefining-the-backlinks-function">Redefining the backlinks function</a></li>
+        <li><a href="#sync-only-top-level-files">Sync only top level files</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Before i start talking gibrish let&rsquo;s give special credits to <a href="https://github.com/jethrokuan" target="_blank" rel="noopener noreffer">jethrokuan (Jethro Kuan)</a>
+ for writing the <a href="https://github.com/org-roam/org-roam" target="_blank" rel="noopener noreffer">org-roam</a>
+ package and <a href="https://github.com/kaushalmodi" target="_blank" rel="noopener noreffer">kaushalmodi (Kaushal Modi)</a>
+ for <a href="https://github.com/kaushalmodi/ox-hugo" target="_blank" rel="noopener noreffer">ox-hugo</a>
+ exporter.</p>
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener noreffer">GNU Emacs</a>
+ is truly an amazing software. It can work as a text editor, a news feed reader, email reader, IDE, and much more. One of the truly amazing things i found on emacs was <a href="https://orgmode.org/" target="_blank" rel="noopener noreffer">Org mode</a>
+. Org mode is really a markup language which has all sorts of amazing features. These amazing features can also be extended and hacked on very easily.</p>
+<p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a>
+ is a static site generator. It would basically take your content and based on some rules as defined by itself and a theme, it would generate a neat website.</p>
+<p><a href="https://github.com/kaushalmodi/ox-hugo" target="_blank" rel="noopener noreffer">ox-hugo</a>
+ implements an exporter, which turns your org mode files into a markdown file, which is then used by hugo to generate the website.</p>
+<p>Finally, <a href="https://github.com/org-roam/org-roam" target="_blank" rel="noopener noreffer">org-roam</a>
+ extends the standard org mode to have a zettelkasten method like feel to it. Where you basically concentrate on writing your notes and you can make the necessary connections to other notes as and when you need to. You can also tag your files with various keywords. It&rsquo;s an amazing package, i urge you to visit its documentation since i may not have explained it very well. But, it&rsquo;s the most useful package for me.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>I will assume that you already know how to use org roam and ox hugo here. Also, a better solution to the same problem can be found here: <a href="https://github.com/jethrokuan/braindump" target="_blank" rel="noopener noreffer">jethrokuan/braindump: knowledge repository managed with org-mode and org-roam.</a>
+. And this one is from the original author of org-roam too, so kindly check that out too.
+Please ensure you have the latest <code>ox-hugo</code>.</p>
+<h2 id="goal">Goal</h2>
+<p>The goal is to create a framework which makes it simpler to export org roam files</p>
+<h2 id="configuring-ox-hugo-variables">Configuring ox-hugo variables</h2>
+<p>Place a <code>.dir-locals.el</code> file in <code>org-roam-directory</code> with the content as given below.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">org-hugo-base-dir</span> <span class="o">.</span> <span class="s">&#34;~/.blog&#34;</span><span class="p">)</span>
+         <span class="p">(</span><span class="nv">org-hugo-section</span> <span class="o">.</span> <span class="s">&#34;braindump&#34;</span><span class="p">))))</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>org-hugo-base-dir</code> is where you have your hugo project initialized</li>
+<li><code>org-hugo-section</code> defines in which section do you want to export your files to.
+For me i use two sections, one for blog posts and one form braindump from org-roam.</li>
+</ul>
+<h2 id="tag-processing">Tag Processing</h2>
+<p>Adding the code given below adds the capability for ox-hugo to process your org-roam tags.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--tag-processing-fn-roam-tags</span><span class="p">(</span><span class="nv">tag-list</span> <span class="nv">info</span><span class="p">)</span>
+  <span class="s">&#34;Process org roam tags for org hugo&#34;</span>
+  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">append</span> <span class="nv">tag-list</span>
+              <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;braindump&#34;</span><span class="p">)</span>
+              <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="p">(</span><span class="nv">org-roam--extract-tags</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="nv">tag-list</span><span class="p">)</span>
+    <span class="p">))</span>
+
+<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-hugo-tag-processing-functions</span> <span class="ss">&#39;org-hugo--tag-processing-fn-roam-tags</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Please note that you can skip line 5 if you don&rsquo;t want to add a braindump tag to it. But i do recommend adding some tag for classifying your roam files separately as well.
+I use this tag in my hugo config to make sure i do not provide rss feeds for my roam files, since they are my unstructured personal notes. I downcase all tags usually to make sure i do not create extra tags because of capitalization issues. You can safely remove the <code>(mapcar #'downcase</code> bit of line 6 and 7 along with one closing bracket from the end of the line, if you prefer not to downcase.</p>
+<h2 id="backlinks-processing">Backlinks Processing</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-backlinks</span> <span class="p">(</span><span class="nv">backend</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">equal</span> <span class="nv">backend</span> <span class="ss">&#39;hugo</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;{&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;}&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">end-of-buffer</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">org-roam-buffer--insert-backlinks</span><span class="p">))))</span>
+<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-export-before-processing-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-backlinks</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You can probably remove line 4 and 5, i use them since i use org-fc at places, on exporting those files, there are certain issues. But still particularly curly braces, either need to be escaped or removed.</p>
+<h2 id="auto-export-on-save">Auto export on save</h2>
+<p>This is a simplified version of the function I use. If you do not want to export all its linked files as well everytime a file is updated, this much is sufficient.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">(</span><span class="kp">&amp;optional</span> <span class="nv">no-trace-links</span><span class="p">)</span>
+  <span class="s">&#34;On save export to hugo&#34;</span>
+  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)))</span>
+<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="sync-all-org-roam-files">Sync all org roam files</h2>
+<p>I used this function just once so far. But it is a needed function nonetheless.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+  <span class="s">&#34;&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">org-roam--list-files</span> <span class="nv">org-roam-directory</span><span class="p">))</span>
+    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
+      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="misc">Misc</h2>
+<h3 id="my-auto-export-on-save">My Auto export on save</h3>
+<p>It has a check for whether the org roam file i am saving is in the top directory of org-roam-directory or not. If it is then only it will be exported. This gives me a little privacy for stuff inside folders. This makes sure that my personal data or organizations data is not shared on my braindump.
+no-trace-link is true if we do not want to trace the link of the file being exported. Since if you add links to an org roam file, you only need to update the backlinks to it&rsquo;s linked files, So that&rsquo;s exactly what we do.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">()</span>
+  <span class="s">&#34;&#34;</span>
+  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+    <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
+               <span class="p">(</span><span class="nv">split-string</span>
+                <span class="p">(</span><span class="nv">replace-regexp-in-string</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">)</span> <span class="s">&#34;&#34;</span>
+                                          <span class="p">(</span><span class="nf">expand-file-name</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">)))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span>
+      <span class="p">(</span><span class="nb">unless</span> <span class="nv">no-trace-links</span>
+        <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">links</span> <span class="p">(</span><span class="nv">org-roam--extract-links</span><span class="p">))</span>
+          <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="p">(</span><span class="nf">aref</span> <span class="nv">links</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="p">(</span><span class="nv">org-hugo--org-roam-save-buffer</span> <span class="no">t</span><span class="p">)</span>
+            <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">))))</span>
+<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="redefining-the-backlinks-function">Redefining the backlinks function</h3>
+<p>As i mentioned i keep the subdirectories private, and so i don&rsquo;t want them to be exported to hugo. This causes some issues. For now, i don&rsquo;t really need to create a link from top level to any subdirectory files. So the only thing i need to worry about are backlinks in top level directories. I work around them by tweaking the backlinks variable in the <code>org-roam-buffer--insert-backlinks</code>.
+I prepend a my to it for the sake of not breaking the original function.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-roam-buffer--insert-backlinks</span> <span class="p">()</span>
+  <span class="s">&#34;Insert the org-roam-buffer backlinks string for the current buffer.&#34;</span>
+  <span class="p">(</span><span class="nb">let</span> <span class="p">(</span><span class="nv">props</span> <span class="nv">file-from</span><span class="p">)</span>
+    <span class="p">(</span><span class="nv">if-let*</span> <span class="p">((</span><span class="nv">file-path</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">))</span>
+              <span class="p">(</span><span class="nv">titles</span> <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">file-path</span><span class="p">)</span>
+                        <span class="p">(</span><span class="nv">org-roam--extract-titles</span><span class="p">)))</span>
+              <span class="p">(</span><span class="nv">backlinks</span> <span class="p">(</span><span class="nf">delete</span> <span class="ss">&#39;nil</span>
+                                 <span class="p">(</span><span class="nf">mapcar</span>
+                                  <span class="nf">#&#39;</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">a</span><span class="p">)</span>
+                                      <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
+                                               <span class="p">(</span><span class="nv">split-string</span>
+                                                <span class="p">(</span><span class="nv">replace-regexp-in-string</span>
+                                                 <span class="p">(</span><span class="nf">concat</span>
+                                                  <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">))</span> <span class="s">&#34;&#34;</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">a</span><span class="p">))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span> <span class="nv">a</span><span class="p">))</span>
+                                  <span class="p">(</span><span class="nv">org-roam--get-backlinks</span> <span class="p">(</span><span class="nb">push</span> <span class="nv">file-path</span> <span class="nv">titles</span><span class="p">)))))</span>
+              <span class="p">(</span><span class="nv">grouped-backlinks</span> <span class="p">(</span><span class="nv">--group-by</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">0</span> <span class="nv">it</span><span class="p">)</span> <span class="nv">backlinks</span><span class="p">)))</span>
+        <span class="p">(</span><span class="nb">progn</span>
+          <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">l</span> <span class="p">(</span><span class="nf">length</span> <span class="nv">backlinks</span><span class="p">)))</span>
+                    <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;\n\n* %s\n&#34;</span>
+                            <span class="p">(</span><span class="nv">org-roam-buffer--pluralize</span> <span class="s">&#34;Backlink&#34;</span> <span class="nv">l</span><span class="p">))))</span>
+          <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">group</span> <span class="nv">grouped-backlinks</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">setq</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">group</span><span class="p">))</span>
+            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nf">mapcar</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">row</span><span class="p">)</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">2</span> <span class="nv">row</span><span class="p">))</span> <span class="p">(</span><span class="nf">cdr</span> <span class="nv">group</span><span class="p">)))</span>
+            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nv">seq-sort-by</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">p</span><span class="p">)</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">p</span> <span class="nb">:point</span><span class="p">))</span> <span class="nf">#&#39;&lt;</span> <span class="nv">props</span><span class="p">))</span>
+            <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;** %s\n&#34;</span>
+                            <span class="p">(</span><span class="nv">org-roam-format-link</span> <span class="nv">file-from</span>
+                                                  <span class="p">(</span><span class="nv">org-roam-db--get-title</span> <span class="nv">file-from</span><span class="p">)</span>
+                                                  <span class="s">&#34;file&#34;</span><span class="p">)))</span>
+            <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">prop</span> <span class="nv">props</span><span class="p">)</span>
+              <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;*** &#34;</span>
+                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">outline</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:outline</span><span class="p">)))</span>
+                          <span class="p">(</span><span class="nv">-&gt;</span> <span class="nv">outline</span>
+                              <span class="p">(</span><span class="nv">string-join</span> <span class="s">&#34; &gt; &#34;</span><span class="p">)</span>
+                              <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">file-from</span><span class="p">))</span>
+                        <span class="s">&#34;Top&#34;</span><span class="p">)</span>
+                      <span class="s">&#34;\n&#34;</span>
+                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">content</span> <span class="p">(</span><span class="nf">funcall</span> <span class="nv">org-roam-buffer-preview-function</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))))</span>
+                          <span class="p">(</span><span class="nf">propertize</span>
+                           <span class="p">(</span><span class="nv">s-trim</span> <span class="p">(</span><span class="nv">s-replace</span> <span class="s">&#34;\n&#34;</span> <span class="s">&#34; &#34;</span> <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">content</span> <span class="nv">file-from</span><span class="p">)))</span>
+                           <span class="ss">&#39;help-echo</span> <span class="s">&#34;mouse-1: visit backlinked note&#34;</span>
+                           <span class="ss">&#39;file-from</span> <span class="nv">file-from</span>
+                           <span class="ss">&#39;file-from-point</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))</span>
+                        <span class="s">&#34;&#34;</span><span class="p">)</span>
+                      <span class="s">&#34;\n\n&#34;</span><span class="p">))))</span>
+      <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;\n\n* No backlinks!&#34;</span><span class="p">))))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="sync-only-top-level-files">Sync only top level files</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+  <span class="s">&#34;&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">split-string</span> <span class="p">(</span><span class="nv">string-trim</span> <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;ls &#34;</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;/*.org&#34;</span><span class="p">)))))</span>
+    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
+      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="conclusion">Conclusion</h2>
+<p>Please write your feedbacks in the comment sectin below. I feel the need to break down the coding bits further. Let me know if i should or shouldn&rsquo;t. My exported braindump can be found at <a href="https://sidhartharya.me/braindump/index.html" target="_blank" rel="noopener noreffer">braindump</a>
+. Please note that my braindump is highly unstructured and most importantly it is not a knowledge repository yet. Some of the information there may be inaccurate or outdated.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.orgroam.com/" target="_blank" rel="noopener noreffer">Org-roam</a>
+</li>
+<li><a href="https://github.com/kaushalmodi/ox-hugo" target="_blank" rel="noopener noreffer">kaushalmodi/ox-hugo</a>
+</li>
+<li><a href="https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/" target="_blank" rel="noopener noreffer">Ox-hugo export all roam to Hugo | Ben Mezger</a>
+</li>
+<li><a href="https://github.com/jethrokuan/braindump" target="_blank" rel="noopener noreffer">jethrokuan/braindump: knowledge repository managed with org-mode and org-roam.</a>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-06-07</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/exporting-org-roam-notes-to-hugo/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" data-title="Exporting Org Roam notes to hugo" data-via="SidharthArya_"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" data-title="Exporting Org Roam notes to hugo" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" data-title="Exporting Org Roam notes to hugo"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" data-title="Exporting Org Roam notes to hugo"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" data-title="Exporting Org Roam notes to hugo"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/running-ipython-inside-a-python-script/" class="prev" rel="prev" title="Running ipython inside a python script"><i class="fas fa-angle-left fa-fw"></i>Running ipython inside a python script</a></div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4788308835707864"
+     data-ad-slot="9611536959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://sidhartharya-me.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"X093BODKSR","algoliaIndex":"sidhartharya-me","algoliaSearchKey":"7e90034ef47b8c38718705e36adc8868","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-198123152-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-198123152-1" async></script></body>
+</html>
