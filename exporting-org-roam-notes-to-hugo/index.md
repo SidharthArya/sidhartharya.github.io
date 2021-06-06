@@ -202,6 +202,8 @@ I prepend a my to it for the sake of not breaking the original function.
 
 Please write your feedbacks in the comment sectin below. I feel the need to break down the coding bits further. Let me know if i should or shouldn't. My exported braindump can be found at [braindump](https://sidhartharya.me/braindump/index.html). Please note that my braindump is highly unstructured and most importantly it is not a knowledge repository yet. Some of the information there may be inaccurate or outdated.
 
+{{< figure src="/ox-hugo/2021-06-07_01-46-18_2021-06-07-014539_740x797_scrot.png" >}}
+
 
 ## References {#references}
 
