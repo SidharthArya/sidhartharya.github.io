@@ -9,7 +9,7 @@
         <item>
     <title>Exporting Org Roam notes to hugo</title>
     <link>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</link>
-    <pubDate>Sat, 05 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <pubDate>Mon, 07 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</guid>
     <description><![CDATA[Before i start talking gibrish let&rsquo;s give special credits to jethrokuan (Jethro Kuan) for writing the org-roam package and kaushalmodi (Kaushal Modi) for ox-hugo exporter.
