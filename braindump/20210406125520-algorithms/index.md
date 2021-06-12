@@ -1,9 +1,7 @@
 # Algorithms
 
 
-An algorithm is any well defined computational procedure that takes some value or a set of values, as input and produces some value, or set of values as output <sup id="c3f9fdcc8700fa41baf5c1032a41cd9b"><a href="#Rayward_Smith_1991" title="Rayward-Smith, Cormen, , Leiserson \&amp; Rivest, Introduction to Algorithms, {The Journal of the Operational Research Society}, v(9), 816 (1991).">Rayward_Smith_1991</a></sup>
-
-An algorithms is a combination of sequence of finite steps to solve a particular problem.  - Sana Ma'am
+An algorithm is any well defined computational procedure that takes some value or a set of values, as input and produces some value, or set of values as output ([Rayward-Smith et al. 1991](#org50647ae))
 
 -   [Divide And Conquer]({{< relref "20210418193547-divide_and_conquer" >}})
 -   [Greedy Algorithm]({{< relref "20210418193558-greedy_algorithm" >}})
@@ -14,3 +12,7 @@ An algorithms is a combination of sequence of finite steps to solve a particular
 
 ## No backlinks! {#no-backlinks}
 
+
+## Bibliography {#bibliography}
+
+<a id="org50647ae"></a>Rayward-Smith, V. J., Thomas H. Cormen, Charles E. Leiserson, and Ronald L. Rivest. 1991. “Introduction to Algorithms.” _The Journal of the Operational Research Society_ 42 (9). JSTOR:816. <http://dx.doi.org/10.2307/2583667>.

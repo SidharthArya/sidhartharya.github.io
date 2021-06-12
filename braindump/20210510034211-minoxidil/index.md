@@ -10,4 +10,3 @@
 #### Treatments > Most Effective {#treatments-most-effective}
 
 [Minoxidil]({{< relref "20210510034211-minoxidil" >}})
-

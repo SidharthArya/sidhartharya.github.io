@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [The New Testament]({{< relref "20210403204237-the_new_testament" >}})
-

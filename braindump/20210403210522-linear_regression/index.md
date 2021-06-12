@@ -18,4 +18,3 @@
 #### Top {#top}
 
 [Linear Regression]({{< relref "20210403210522-linear_regression" >}})
-

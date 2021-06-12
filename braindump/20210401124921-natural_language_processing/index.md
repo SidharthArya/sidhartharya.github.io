@@ -16,4 +16,3 @@
 #### Sub Domains {#sub-domains}
 
 [Natural Language Processing]({{< relref "20210401124921-natural_language_processing" >}})
-

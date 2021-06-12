@@ -5,4 +5,3 @@ In quantum field theory, the Casimir effect is a physical force acting on the ma
 
 
 ## No backlinks! {#no-backlinks}
-

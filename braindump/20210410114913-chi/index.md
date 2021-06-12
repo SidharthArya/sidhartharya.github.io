@@ -23,4 +23,3 @@ Change horizontal alignment and feel
 #### Top {#top}
 
 Makes use of [Chi]({{< relref "20210410114913-chi" >}})
-

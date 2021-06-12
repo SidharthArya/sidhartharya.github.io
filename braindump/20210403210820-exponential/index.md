@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Exponential]({{< relref "20210403210820-exponential" >}})
-

@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Divisive Clustering]({{< relref "20210403201228-divisive_clustering" >}})
-

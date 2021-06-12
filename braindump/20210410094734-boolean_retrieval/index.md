@@ -29,4 +29,3 @@ Only boolean queries are possible
 #### Models {#models}
 
 [Boolean Retrieval]({{< relref "20210410094734-boolean_retrieval" >}})
-

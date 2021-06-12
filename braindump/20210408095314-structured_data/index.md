@@ -13,4 +13,3 @@ Usually information in tables
 #### Types of Data {#types-of-data}
 
 [Structured Data]({{< relref "20210408095314-structured_data" >}})
-

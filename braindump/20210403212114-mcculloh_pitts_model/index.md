@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Mcculloh Pitts Model]({{< relref "20210403212114-mcculloh_pitts_model" >}})
-

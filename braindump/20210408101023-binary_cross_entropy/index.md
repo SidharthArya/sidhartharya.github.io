@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Binary Cross Entropy]({{< relref "20210408101023-binary_cross_entropy" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Magnesium]({{< relref "20210403215418-magnesium" >}})
-

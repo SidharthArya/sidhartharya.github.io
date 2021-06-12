@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [InceptionNet]({{< relref "20210403211550-inceptionnet" >}})
-

@@ -38,4 +38,3 @@ Inspired from: [Neurons]({{< relref "20210403211940-neurons" >}})
 #### Top {#top}
 
 Working with [Neural Networks]({{< relref "20210403211925-neural_networks" >}}) containing more than one hidden layer
-

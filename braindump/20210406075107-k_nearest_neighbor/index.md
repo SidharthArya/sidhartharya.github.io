@@ -15,4 +15,3 @@
 #### Models {#models}
 
 [K Nearest Neighbor]({{< relref "20210406075107-k_nearest_neighbor" >}})
-

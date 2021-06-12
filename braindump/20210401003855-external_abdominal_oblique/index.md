@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [External Abdominal Oblique]({{< relref "20210401003855-external_abdominal_oblique" >}})
-

@@ -18,4 +18,3 @@
 #### Top {#top}
 
 Internal Expectations are highly dependent on [External Expectations]({{< relref "20210407043925-external_expectations" >}}) Why? Because external expectations can be the basis of our internal expectations. For example, early expectations of parents from children can become the expectations of children from themselves in time.
-

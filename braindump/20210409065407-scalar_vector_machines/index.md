@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [Scalar Vector Machines]({{< relref "20210409065407-scalar_vector_machines" >}})
-

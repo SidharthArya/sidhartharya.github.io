@@ -13,4 +13,3 @@
 #### Types {#types}
 
 [Acyclic Networks]({{< relref "20210403212158-acyclic_networks" >}})
-

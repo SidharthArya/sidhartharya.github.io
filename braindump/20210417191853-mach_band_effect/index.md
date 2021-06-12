@@ -13,4 +13,3 @@ Mach bands is an optical illusion named after the physicist Ernst Mach. It exagg
 #### Top {#top}
 
 [Mach Band Effect]({{< relref "20210417191853-mach_band_effect" >}})
-

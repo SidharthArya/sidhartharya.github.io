@@ -26,4 +26,3 @@ Special treatment required to remove the possibility of duplication?
 
 
 ## No backlinks! {#no-backlinks}
-

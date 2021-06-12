@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Natural Language Inference]({{< relref "20210402102615-natural_language_inference" >}})
-

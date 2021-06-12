@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Arrays]({{< relref "20210410095202-arrays" >}})
-

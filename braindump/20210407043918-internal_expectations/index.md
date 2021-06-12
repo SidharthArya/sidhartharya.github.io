@@ -17,4 +17,3 @@ Because external expectations can be the basis of our internal expectations. For
 #### Top {#top}
 
 [Internal Expectations]({{< relref "20210407043918-internal_expectations" >}})
-

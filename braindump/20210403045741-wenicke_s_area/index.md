@@ -13,4 +13,3 @@ The region of the brain that is important for language development.
 #### Top {#top}
 
 [Wenicke's Area]({{< relref "20210403045741-wenicke_s_area" >}})
-

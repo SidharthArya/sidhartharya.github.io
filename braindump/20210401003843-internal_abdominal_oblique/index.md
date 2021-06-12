@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Internal Abdominal Oblique]({{< relref "20210401003843-internal_abdominal_oblique" >}})
-

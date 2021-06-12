@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Monte Carlo Method]({{< relref "20210403210309-monte_carlo_method" >}})
-

@@ -30,4 +30,3 @@ The colour scheme was chosen to reflect this chakra's assosciation with the colo
 #### Top {#top}
 
 [Muladhara]({{< relref "20210408210847-muladhara" >}})
-

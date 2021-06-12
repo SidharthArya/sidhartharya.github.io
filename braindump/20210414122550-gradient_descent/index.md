@@ -13,4 +13,3 @@ Cauchy discovered it
 #### Top {#top}
 
 [Gradient Descent]({{< relref "20210414122550-gradient_descent" >}})
-

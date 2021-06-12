@@ -7,4 +7,3 @@ Copper ions dissolve in water when water is kept in a copper vessel and kill the
 
 
 ## No backlinks! {#no-backlinks}
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Bayesian Networks]({{< relref "20210415065143-bayesian_networks" >}})
-

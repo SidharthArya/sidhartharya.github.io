@@ -9,7 +9,7 @@ Text classification is the task of assigning a sentence or document an appropria
 Input:
 
 -   a document d
--   A set of classes C= {c\_1, c\_2, c\_3 ..., c\_j}
+-   A set of classes C= c\_1, c\_2, c\_3 ..., c\_j}
 
 Output:
 a predicted class \\[ c \in C\\]
@@ -42,7 +42,7 @@ spam: black list address OR ("dollars" AND "have been selected")
 Input:
 
 -   a document d
--   A set of classes C= {c\_1, c\_2, c\_3 ..., c\_j}
+-   A set of classes C= c\_1, c\_2, c\_3 ..., c\_j
 -   a training set of m hand labelled
 
 Output:
@@ -61,4 +61,3 @@ a predicted class \\[ c \in C\\]
 #### Tasks {#tasks}
 
 [Text Classification]({{< relref "20210402102641-text_classification" >}})
-

@@ -19,4 +19,3 @@
 #### Top {#top}
 
 [Central Tenderncy]({{< relref "20210403211208-central_tendency" >}})
-

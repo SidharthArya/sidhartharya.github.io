@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [VGG]({{< relref "20210403211600-vgg" >}})
-

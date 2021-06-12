@@ -72,4 +72,3 @@ Made Up from [Collagen]({{< relref "20210404071955-collagen" >}})
 #### Top {#top}
 
 A type of [Collagen]({{< relref "20210404071955-collagen" >}})
-

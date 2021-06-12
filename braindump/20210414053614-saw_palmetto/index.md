@@ -13,4 +13,3 @@
 #### Treatments > Natural {#treatments-natural}
 
 [Saw Palmetto]({{< relref "20210414053614-saw_palmetto" >}})
-

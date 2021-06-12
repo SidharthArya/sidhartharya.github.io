@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [Support Vector Machines]({{< relref "20210408110313-support_vector_machines" >}})
-

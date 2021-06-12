@@ -10,4 +10,3 @@
 #### Enhancers {#enhancers}
 
 [Emotional Reasoning]({{< relref "20210407051119-emotional_reasoning" >}}), only when not biased
-

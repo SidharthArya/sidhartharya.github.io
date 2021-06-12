@@ -15,4 +15,3 @@
 #### Top {#top}
 
 [Linear]({{< relref "20210415061838-linear" >}})
-

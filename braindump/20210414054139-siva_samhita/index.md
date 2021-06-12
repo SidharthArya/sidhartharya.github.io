@@ -10,4 +10,3 @@
 #### Texts {#texts}
 
 [Siva Samhita]({{< relref "20210414054139-siva_samhita" >}})
-

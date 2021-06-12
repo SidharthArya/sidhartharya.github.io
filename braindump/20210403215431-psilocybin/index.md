@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Psilocybin]({{< relref "20210403215431-psilocybin" >}})
-

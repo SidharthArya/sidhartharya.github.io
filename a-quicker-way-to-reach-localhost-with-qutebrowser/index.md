@@ -55,8 +55,30 @@ echo $QUTE_COUNT >  /tmp/qutebrowser-localhost-port
 ```
 
 
+## List open ports using dmenu {#list-open-ports-using-dmenu}
+
+Okay, the credit for this belongs here: [An improved localhost userscript : qutebrowser](https://www.reddit.com/r/qutebrowser/comments/nua8ks/an%5Fimproved%5Flocalhost%5Fuserscript/)
+
+```bash
+#!/bin/bash
+
+if [[ $1 -eq 'list' ]] && [[ -z $QUTE_COUNT ]];
+then
+    PORTS="$(ss -nltp | tail -n +2 |  awk '{print $4}' | awk -F: '{print $2}')"
+    QUTE_COUNT=$(echo "$PORTS" | dmenu )
+fi
+
+echo open -t localhost:${QUTE_COUNT:-8080} > $QUTE_FIFO
+```
+
+Bind this instead, if you want to use the list instead of a default port.
+
+```python
+config.bind('zl', 'spawn --userscript localhost list')
+```
+
+
 ## References {#references}
 
 -   [qutebrowser | qutebrowser](https://qutebrowser.org/)
 -   [Writing qutebrowser userscripts | qutebrowser](https://qutebrowser.org/doc/userscripts.html)
-

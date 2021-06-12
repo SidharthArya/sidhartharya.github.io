@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Ibogaine]({{< relref "20210403215357-ibogaine" >}})
-

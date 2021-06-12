@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [ResNet]({{< relref "20210403211534-resnet" >}})
-

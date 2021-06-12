@@ -5,4 +5,3 @@ Quantitative trading consists of trading strategies based on quantitative analys
 
 
 ## No backlinks! {#no-backlinks}
-

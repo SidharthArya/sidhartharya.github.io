@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Random Variable]({{< relref "20210403211125-random_variable" >}})
-

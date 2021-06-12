@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [LogSigmoid]({{< relref "20210403200907-logsigmoid" >}})
-

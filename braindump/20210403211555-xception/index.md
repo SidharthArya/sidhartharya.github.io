@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [Xception]({{< relref "20210403211555-xception" >}})
-

@@ -10,4 +10,3 @@
 #### Components of computer vision system {#components-of-computer-vision-system}
 
 [Scene]({{< relref "20210417180617-scene" >}})
-

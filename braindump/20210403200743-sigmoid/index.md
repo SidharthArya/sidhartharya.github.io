@@ -17,4 +17,3 @@
 #### Top {#top}
 
 [Sigmoid]({{< relref "20210403200743-sigmoid" >}})
-

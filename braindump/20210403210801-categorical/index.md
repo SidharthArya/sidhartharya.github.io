@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Categorical]({{< relref "20210403210801-categorical" >}})
-

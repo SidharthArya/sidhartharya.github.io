@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Multihead Attention]({{< relref "20210403200926-multihead_attention" >}})
-

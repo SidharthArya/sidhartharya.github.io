@@ -21,4 +21,3 @@
 #### Top {#top}
 
 [Binary Tree]({{< relref "20210418113258-binary_tree" >}}) based data structure Used to append or concat Requires less memory
-

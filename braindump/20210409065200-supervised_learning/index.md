@@ -19,4 +19,3 @@
 #### Types of Machine Learning {#types-of-machine-learning}
 
 [Supervised Learning]({{< relref "20210409065200-supervised_learning" >}})
-

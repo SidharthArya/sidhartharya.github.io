@@ -10,4 +10,3 @@
 #### Treatments > Natural {#treatments-natural}
 
 [Pumpkin seed Oil]({{< relref "20210414053625-pumpkin_seed_oil" >}})
-

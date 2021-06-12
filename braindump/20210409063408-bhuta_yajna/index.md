@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Bhuta Yajna]({{< relref "20210409063408-bhuta_yajna" >}})
-

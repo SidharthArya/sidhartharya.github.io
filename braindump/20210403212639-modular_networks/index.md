@@ -16,4 +16,3 @@
 #### Types {#types}
 
 [Modular Networks]({{< relref "20210403212639-modular_networks" >}})
-

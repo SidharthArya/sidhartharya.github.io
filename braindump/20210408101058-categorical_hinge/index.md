@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Categorical Hinge]({{< relref "20210408101058-categorical_hinge" >}})
-

@@ -10,4 +10,3 @@
 #### Functions {#functions}
 
 [Probability Density Function]({{< relref "20210403210948-probability_density_function" >}})
-

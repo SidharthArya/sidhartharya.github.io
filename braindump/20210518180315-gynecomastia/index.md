@@ -10,4 +10,3 @@
 #### Top {#top}
 
 For [Gynecomastia]({{< relref "20210518180315-gynecomastia" >}})
-

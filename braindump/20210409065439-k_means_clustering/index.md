@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [K Means Clustering]({{< relref "20210409065439-k_means_clustering" >}})
-

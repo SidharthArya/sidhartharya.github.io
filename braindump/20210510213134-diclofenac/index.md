@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Diclofenac]({{< relref "20210510213134-diclofenac" >}})
-

@@ -5,4 +5,3 @@ Occam's razor (or Ockham's razor) is a principle from philosophy. Suppose there 
 
 
 ## No backlinks! {#no-backlinks}
-

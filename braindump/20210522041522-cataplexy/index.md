@@ -5,4 +5,3 @@ Cataplexy is a sudden, brief loss of voluntary muscle tone triggered by strong e
 
 
 ## No backlinks! {#no-backlinks}
-

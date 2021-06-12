@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Temporal Lobe]({{< relref "20210408091042-temporal_lobe" >}})
-

@@ -10,4 +10,3 @@
 #### Helps With {#helps-with}
 
 [Muscle Cramps]({{< relref "20210522103611-muscle_cramps" >}})
-

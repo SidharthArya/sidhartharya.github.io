@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Cannabis]({{< relref "20210403215332-cannabis" >}})
-

@@ -10,4 +10,3 @@
 #### Mechanism {#mechanism}
 
 Antacid + Gastric acid -> Neutral or low acidity salts ( increase gastric pH)   Antacind also inactivates [Pepsin]({{< relref "20210522155336-pepsin" >}})
-

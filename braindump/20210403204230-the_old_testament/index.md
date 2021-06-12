@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [The Old Testament]({{< relref "20210403204230-the_old_testament" >}})
-

@@ -41,4 +41,3 @@ None of the natural remedies have enough of an impact to call them a hair loss t
 #### Top {#top}
 
 Prevents [Hair Loss]({{< relref "20210414053451-hair_loss" >}})
-

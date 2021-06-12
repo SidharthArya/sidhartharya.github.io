@@ -16,4 +16,3 @@
 #### Types {#types}
 
 [Natural Language Undestanding]({{< relref "20210402102606-natural_language_undestanding" >}})
-

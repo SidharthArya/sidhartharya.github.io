@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Mucous Membranes]({{< relref "20210404074807-mucous_membranes" >}})
-

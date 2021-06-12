@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Chi Squared]({{< relref "20210403210831-chi_squared" >}})
-

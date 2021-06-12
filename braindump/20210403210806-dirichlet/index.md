@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Dirichlet]({{< relref "20210403210806-dirichlet" >}})
-

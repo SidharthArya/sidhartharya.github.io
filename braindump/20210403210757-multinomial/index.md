@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Multinomial]({{< relref "20210403210757-multinomial" >}})
-

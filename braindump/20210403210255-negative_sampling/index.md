@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Negative Sampling]({{< relref "20210403210255-negative_sampling" >}})
-

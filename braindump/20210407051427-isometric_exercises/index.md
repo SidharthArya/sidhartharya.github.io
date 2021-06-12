@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Isometric Exercises]({{< relref "20210407051427-isometric_exercises" >}})
-

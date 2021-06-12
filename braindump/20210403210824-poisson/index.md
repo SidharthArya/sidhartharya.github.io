@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Poisson]({{< relref "20210403210824-poisson" >}})
-

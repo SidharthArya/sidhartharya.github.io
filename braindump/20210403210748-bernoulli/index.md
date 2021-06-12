@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Bernoulli]({{< relref "20210403210748-bernoulli" >}})
-

@@ -13,4 +13,3 @@
 #### Treatments > Natural {#treatments-natural}
 
 [Stinging Nettle]({{< relref "20210418080221-stinging_nettle" >}})
-

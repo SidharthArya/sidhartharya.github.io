@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Alcohol]({{< relref "20210403215717-alcohol" >}})
-

@@ -16,4 +16,3 @@
 #### Models {#models}
 
 [Gradient Boosting Algorithms]({{< relref "20210409065508-gradient_boosting_algorithms" >}})
-

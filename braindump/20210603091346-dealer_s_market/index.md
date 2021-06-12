@@ -21,4 +21,3 @@ In which traders use a dealer for buying and selling instead of exchanging direc
 #### Top {#top}
 
 [Dealer's Market]({{< relref "20210603091346-dealer_s_market" >}})
-

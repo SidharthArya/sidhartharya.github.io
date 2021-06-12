@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Entheogens]({{< relref "20210403215925-entheogens" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Tobacco]({{< relref "20210403215833-tobacco" >}})
-

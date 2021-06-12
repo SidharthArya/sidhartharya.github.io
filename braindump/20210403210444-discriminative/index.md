@@ -14,4 +14,3 @@
 #### Types {#types}
 
 [Discriminative]({{< relref "20210403210444-discriminative" >}})
-

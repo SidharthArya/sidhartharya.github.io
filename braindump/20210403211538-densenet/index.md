@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [DenseNet]({{< relref "20210403211538-densenet" >}})
-

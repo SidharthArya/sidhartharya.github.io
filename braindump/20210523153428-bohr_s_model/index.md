@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [Bohr's Model]({{< relref "20210523153428-bohr_s_model" >}})
-

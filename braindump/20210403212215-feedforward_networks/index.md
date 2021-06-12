@@ -26,4 +26,3 @@
 #### Top {#top}
 
 An autoencoder is a special type of [Feedforward Networks]({{< relref "20210403212215-feedforward_networks" >}}) which
-

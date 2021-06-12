@@ -18,4 +18,3 @@
 #### Top {#top}
 
 [Naive Bayes]({{< relref "20210403210553-naive_bayes" >}})
-

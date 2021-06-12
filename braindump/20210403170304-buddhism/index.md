@@ -15,4 +15,3 @@
 #### Top {#top}
 
 [Buddhism]({{< relref "20210403170304-buddhism" >}})
-

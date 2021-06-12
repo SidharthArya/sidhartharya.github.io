@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Deva Yajna]({{< relref "20210409063442-deva_yajna" >}})
-

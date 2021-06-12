@@ -13,4 +13,3 @@
 #### Types {#types}
 
 [Layered Networks]({{< relref "20210403212149-layered_networks" >}})
-

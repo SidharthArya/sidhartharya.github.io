@@ -5,4 +5,3 @@ Contract note is a confirmation of trades done on a particular day on behalf of 
 
 
 ## No backlinks! {#no-backlinks}
-

@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Gaussian]({{< relref "20210403210740-gaussian" >}})
-

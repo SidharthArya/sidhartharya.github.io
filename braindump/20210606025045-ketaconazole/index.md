@@ -10,4 +10,3 @@
 #### Solutions {#solutions}
 
 [Ketaconazole]({{< relref "20210606025045-ketaconazole" >}})
-

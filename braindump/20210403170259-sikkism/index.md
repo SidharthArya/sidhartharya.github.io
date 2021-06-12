@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Sikkism]({{< relref "20210403170259-sikkism" >}})
-

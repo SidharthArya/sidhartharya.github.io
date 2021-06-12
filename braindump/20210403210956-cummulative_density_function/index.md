@@ -10,4 +10,3 @@
 #### Functions {#functions}
 
 [Cummulative Density Function]({{< relref "20210403210956-cummulative_density_function" >}})
-

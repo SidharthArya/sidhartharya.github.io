@@ -10,4 +10,3 @@
 #### Treatments > Most Effective {#treatments-most-effective}
 
 [Finasteride]({{< relref "20210510034216-finasteride" >}})
-

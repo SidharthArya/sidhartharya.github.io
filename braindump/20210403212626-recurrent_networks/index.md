@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Recurrent Networks]({{< relref "20210403212626-recurrent_networks" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Frontal Lobe]({{< relref "20210408091012-frontal_lobe" >}})
-

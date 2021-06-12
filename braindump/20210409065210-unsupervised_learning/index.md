@@ -10,4 +10,3 @@
 #### Types of Machine Learning {#types-of-machine-learning}
 
 [Unsupervised Learning]({{< relref "20210409065210-unsupervised_learning" >}})
-

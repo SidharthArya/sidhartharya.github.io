@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Paracetamol]({{< relref "20210510213313-paracetamol" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Genetic Algorithms]({{< relref "20210404060220-genetic_algorithms" >}})
-

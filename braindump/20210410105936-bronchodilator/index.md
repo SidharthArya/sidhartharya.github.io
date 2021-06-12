@@ -13,4 +13,3 @@ Bronchodilators are a type of medication that make breathing easier by relaxing 
 #### Top {#top}
 
 Basal [Bronchodilator]({{< relref "20210410105936-bronchodilator" >}})
-

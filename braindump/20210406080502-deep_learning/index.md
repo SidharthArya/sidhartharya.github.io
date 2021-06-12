@@ -3,7 +3,7 @@
 
 Working with [Neural Networks]({{< relref "20210403211925-neural_networks" >}}) containing more than one hidden layer
 
-<sup id="c2a104caaf9911e2157bcccb83fac6ad"><a href="#schmidhuber15_deep_learn_neural_networ" title="J\urgen Schmidhuber, Deep Learning in Neural Networks: an Overview, {Neural Networks}, v(nil), 85-117 (2015).">schmidhuber15_deep_learn_neural_networ</a></sup>
+([Schmidhuber 2015](#orga374018))
 
 
 ## Resources {#resources}
@@ -21,3 +21,7 @@ Working with [Neural Networks]({{< relref "20210403211925-neural_networks" >}}) 
 
 [Deep Learning]({{< relref "20210406080502-deep_learning" >}})
 
+
+## Bibliography {#bibliography}
+
+<a id="orga374018"></a>Schmidhuber, Jürgen. 2015. “Deep Learning in Neural Networks: An Overview.” _Neural Networks_ 61 (nil):85–117. <https://doi.org/10.1016/j.neunet.2014.09.003>.

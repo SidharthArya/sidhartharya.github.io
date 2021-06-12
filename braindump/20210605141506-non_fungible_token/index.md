@@ -5,4 +5,3 @@ A non-fungible token is a unit of data stored on a digital ledger, called a bloc
 
 
 ## No backlinks! {#no-backlinks}
-

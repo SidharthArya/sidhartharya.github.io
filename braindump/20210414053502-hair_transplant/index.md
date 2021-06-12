@@ -10,4 +10,3 @@
 #### Treatments > Most Effective {#treatments-most-effective}
 
 [Hair Transplant]({{< relref "20210414053502-hair_transplant" >}})
-

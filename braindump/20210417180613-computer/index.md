@@ -10,4 +10,3 @@
 #### Components of computer vision system {#components-of-computer-vision-system}
 
 [Computer]({{< relref "20210417180613-computer" >}})
-

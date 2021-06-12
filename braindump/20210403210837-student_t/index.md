@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Student-t]({{< relref "20210403210837-student_t" >}})
-

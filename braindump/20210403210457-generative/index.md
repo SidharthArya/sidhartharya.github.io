@@ -14,4 +14,3 @@
 #### Types {#types}
 
 [Generative]({{< relref "20210403210457-generative" >}})
-

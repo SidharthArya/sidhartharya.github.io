@@ -10,4 +10,3 @@
 #### Concepts {#concepts}
 
 [Nirvana]({{< relref "20210403224702-nirvana" >}})
-

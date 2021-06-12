@@ -21,4 +21,3 @@ Leads to better [Elasticity]({{< relref "20210407045903-elasticity" >}}) of [Ski
 #### Enhancers {#enhancers}
 
 [Massages]({{< relref "20210407045425-massages" >}})
-

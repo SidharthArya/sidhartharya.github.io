@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Categorical Cross Entropy]({{< relref "20210408101032-categorical_cross_entropy" >}})
-

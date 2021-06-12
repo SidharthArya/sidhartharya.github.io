@@ -13,4 +13,3 @@ in which participants trade directly with each other in an auction-style format
 #### Top {#top}
 
 [Auction Market]({{< relref "20210603091432-auction_market" >}})
-

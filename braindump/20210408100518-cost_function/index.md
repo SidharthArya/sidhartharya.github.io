@@ -20,4 +20,3 @@
 #### Concepts {#concepts}
 
 [Cost Function]({{< relref "20210408100518-cost_function" >}})
-

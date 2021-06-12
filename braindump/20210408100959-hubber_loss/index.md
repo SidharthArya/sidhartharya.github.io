@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Hubber Loss]({{< relref "20210408100959-hubber_loss" >}})
-

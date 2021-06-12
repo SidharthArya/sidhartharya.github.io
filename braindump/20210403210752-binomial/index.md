@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Binomial]({{< relref "20210403210752-binomial" >}})
-

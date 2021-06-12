@@ -10,4 +10,3 @@
 #### Sub Domains {#sub-domains}
 
 [Knowledge Based Systems]({{< relref "20210401124909-knowledge_based_systems" >}})
-

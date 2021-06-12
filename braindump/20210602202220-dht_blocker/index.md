@@ -2,7 +2,7 @@
 
 
 DHT
-\\[\frac{1}{2}\\]
+\\[\frac1}2\\]
 
 
 ## Backlinks {#backlinks}
@@ -22,4 +22,3 @@ DHT
 #### Top {#top}
 
 [DHT Blocker]({{< relref "20210602202220-dht_blocker" >}})
-

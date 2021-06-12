@@ -10,4 +10,3 @@
 #### Models {#models}
 
 [Decision Tree]({{< relref "20210409065359-decision_tree" >}})
-

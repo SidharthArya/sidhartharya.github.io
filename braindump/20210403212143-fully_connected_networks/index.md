@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Fully Connected Networks]({{< relref "20210403212143-fully_connected_networks" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Hinduism]({{< relref "20210403170250-hinduism" >}})
-

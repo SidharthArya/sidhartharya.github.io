@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Islam]({{< relref "20210403170255-islam" >}})
-

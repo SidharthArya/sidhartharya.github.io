@@ -12,4 +12,3 @@ The lymphatic system is a network of tissues and organs that help rid the body o
 
 
 ## No backlinks! {#no-backlinks}
-

@@ -13,4 +13,3 @@ Record for each document whether it contains each word out of all the different 
 #### Data Structures {#data-structures}
 
 [Term Document Incidence Matrix]({{< relref "20210410094844-term_document_incidence_matrix" >}})
-

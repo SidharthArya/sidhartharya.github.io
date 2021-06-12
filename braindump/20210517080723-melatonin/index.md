@@ -13,4 +13,3 @@ Synthesized by the [Pineal Gland]({{< relref "20210517080735-pineal_gland" >}})
 #### Top {#top}
 
 A [Neurotransmitter]({{< relref "20210522103948-neurotransmitter" >}}) needed to produce [Melatonin]({{< relref "20210517080723-melatonin" >}})
-

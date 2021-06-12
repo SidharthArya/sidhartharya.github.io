@@ -26,4 +26,3 @@ Ggg
 #### Data Structures {#data-structures}
 
 [Inverted Index]({{< relref "20210410095031-inverted_index" >}})
-

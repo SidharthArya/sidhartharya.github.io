@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Sample Space]({{< relref "20210403211112-sample_space" >}})
-

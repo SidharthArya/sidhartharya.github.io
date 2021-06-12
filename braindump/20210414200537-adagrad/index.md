@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [AdaGrad]({{< relref "20210414200537-adagrad" >}})
-

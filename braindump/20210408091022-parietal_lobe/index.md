@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Parietal Lobe]({{< relref "20210408091022-parietal_lobe" >}})
-

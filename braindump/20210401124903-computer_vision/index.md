@@ -59,4 +59,3 @@ Computer Vision is the science and technology of machines that see.
 #### Top {#top}
 
 [Computer Vision]({{< relref "20210401124903-computer_vision" >}})
-

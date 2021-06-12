@@ -13,4 +13,3 @@
 #### Types of Machine Learning {#types-of-machine-learning}
 
 [Reinforcement Learning]({{< relref "20210403200706-reinforcement_learning" >}})
-

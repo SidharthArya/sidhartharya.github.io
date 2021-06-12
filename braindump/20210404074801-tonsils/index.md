@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Tonsils]({{< relref "20210404074801-tonsils" >}})
-

@@ -10,4 +10,3 @@
 #### Promotes {#promotes}
 
 [Norepinephrine]({{< relref "20210412050737-norepinephrine" >}})
-

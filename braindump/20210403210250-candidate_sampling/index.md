@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Candidate Sampling]({{< relref "20210403210250-candidate_sampling" >}})
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Plyometric Exercises]({{< relref "20210407051445-plyometric_exercises" >}})
-

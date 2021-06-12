@@ -19,4 +19,3 @@
 #### Top {#top}
 
 [Complexity]({{< relref "20210410101714-complexity" >}})
-

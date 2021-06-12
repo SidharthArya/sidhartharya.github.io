@@ -10,4 +10,3 @@ Baha'is believe that God periodically reveals his will through divine messengers
 
 
 ## No backlinks! {#no-backlinks}
-

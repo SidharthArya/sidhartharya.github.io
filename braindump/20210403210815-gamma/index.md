@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Gamma]({{< relref "20210403210815-gamma" >}})
-

@@ -13,4 +13,3 @@
 #### Top {#top}
 
 [Christianity]({{< relref "20210403170310-christianity" >}})
-

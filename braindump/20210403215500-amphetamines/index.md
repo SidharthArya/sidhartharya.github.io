@@ -18,4 +18,3 @@
 #### Top {#top}
 
 [Amphetamines]({{< relref "20210403215500-amphetamines" >}})
-

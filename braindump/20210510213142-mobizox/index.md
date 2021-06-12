@@ -9,4 +9,3 @@ Very effective for muscle spasm
 
 
 ## No backlinks! {#no-backlinks}
-

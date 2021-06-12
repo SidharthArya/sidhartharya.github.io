@@ -13,4 +13,3 @@
 #### Top {#top}
 
 [Quick Sort]({{< relref "20210418194036-quick_sort" >}})
-

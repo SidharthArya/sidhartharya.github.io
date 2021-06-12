@@ -15,4 +15,3 @@ Usually done daily
 #### Top {#top}
 
 [Manushya Yajna]({{< relref "20210409063344-manushya_yajna" >}})
-

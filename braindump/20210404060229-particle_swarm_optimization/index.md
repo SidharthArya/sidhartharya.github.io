@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Particle Swarm Optimization]({{< relref "20210404060229-particle_swarm_optimization" >}})
-

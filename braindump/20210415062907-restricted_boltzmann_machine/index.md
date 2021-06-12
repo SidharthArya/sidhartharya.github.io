@@ -11,4 +11,3 @@ Neural networks that belong to Energy Based Models. These are parameterized gene
 
 
 ## No backlinks! {#no-backlinks}
-

@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Pride]({{< relref "20210403223420-pride" >}})
-

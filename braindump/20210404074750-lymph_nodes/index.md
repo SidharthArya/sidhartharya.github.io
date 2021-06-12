@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Lymph nodes]({{< relref "20210404074750-lymph_nodes" >}})
-

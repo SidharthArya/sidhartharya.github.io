@@ -14,4 +14,3 @@
 #### Top {#top}
 
 [Bible]({{< relref "20210403204219-bible" >}})
-

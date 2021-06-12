@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Nitrous Oxide]({{< relref "20210403215803-nitrous_oxide" >}})
-

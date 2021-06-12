@@ -21,4 +21,3 @@
 #### Concepts {#concepts}
 
 [Activation Functions]({{< relref "20210403200721-activation_functions" >}})
-

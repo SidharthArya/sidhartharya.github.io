@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Ant Colony Optimization]({{< relref "20210404060237-ant_colony_optimization" >}})
-

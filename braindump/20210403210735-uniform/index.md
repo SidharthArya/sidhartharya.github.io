@@ -10,4 +10,3 @@
 #### Distributions {#distributions}
 
 [Uniform]({{< relref "20210403210735-uniform" >}})
-

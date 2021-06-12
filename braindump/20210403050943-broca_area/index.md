@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Broca Area]({{< relref "20210403050943-broca_area" >}})
-

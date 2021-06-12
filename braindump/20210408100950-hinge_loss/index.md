@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Hinge Loss]({{< relref "20210408100950-hinge_loss" >}})
-

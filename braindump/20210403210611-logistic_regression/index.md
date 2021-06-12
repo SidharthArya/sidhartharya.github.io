@@ -18,4 +18,3 @@
 #### Top {#top}
 
 [Logistic Regression]({{< relref "20210403210611-logistic_regression" >}})
-

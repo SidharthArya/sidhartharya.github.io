@@ -18,4 +18,3 @@ Usually implemented with [Linked List]({{< relref "20210410095138-linked_list" >
 #### Top {#top}
 
 [Linked List]({{< relref "20210410095138-linked_list" >}})
-

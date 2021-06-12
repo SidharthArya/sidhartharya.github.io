@@ -10,4 +10,3 @@
 #### Damager {#damager}
 
 [Posture]({{< relref "20210407050419-posture" >}})
-

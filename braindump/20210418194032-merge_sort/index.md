@@ -13,4 +13,3 @@
 #### Top {#top}
 
 [Merge Sort]({{< relref "20210418194032-merge_sort" >}})
-

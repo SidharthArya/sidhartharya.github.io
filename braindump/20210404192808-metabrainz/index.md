@@ -18,4 +18,3 @@ The MetaBrainz Foundation is a non-profit that believes in free, open access to 
 #### Top {#top}
 
 [MetaBrainz]({{< relref "20210404192808-metabrainz" >}})
-

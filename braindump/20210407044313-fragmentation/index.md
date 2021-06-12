@@ -1,7 +1,7 @@
 # Fragmentation
 
 
-<sup id="2e4580f251512d06f2c58a1f278e7052"><a href="#teal_swan_youtube" title="">teal_swan_youtube</a></sup>
+(NO\_ITEM\_DATA:teal\_swan\_youtube)
 
 
 ## Causes {#causes}
@@ -19,3 +19,7 @@
 
 [Fragmentation]({{< relref "20210407044313-fragmentation" >}})
 
+
+## Bibliography {#bibliography}
+
+NO\_ITEM\_DATA:teal\_swan\_youtube

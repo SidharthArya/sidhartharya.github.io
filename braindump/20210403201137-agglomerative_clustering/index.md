@@ -10,4 +10,3 @@
 #### Types {#types}
 
 [Agglomerative Clustering]({{< relref "20210403201137-agglomerative_clustering" >}})
-

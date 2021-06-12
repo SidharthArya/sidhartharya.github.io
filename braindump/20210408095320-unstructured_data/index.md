@@ -13,4 +13,3 @@ does not have a clear, overt semantic structure
 #### Types of Data {#types-of-data}
 
 [Unstructured Data]({{< relref "20210408095320-unstructured_data" >}})
-

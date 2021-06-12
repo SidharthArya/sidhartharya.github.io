@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Eccentric Exercises]({{< relref "20210407051420-eccentric_exercises" >}})
-

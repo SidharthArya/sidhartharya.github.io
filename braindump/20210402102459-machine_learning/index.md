@@ -38,4 +38,3 @@
 #### Sub Domains {#sub-domains}
 
 [Machine Learning]({{< relref "20210402102459-machine_learning" >}})
-

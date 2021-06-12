@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Occipital Lobe]({{< relref "20210408091036-occipital_lobe" >}})
-

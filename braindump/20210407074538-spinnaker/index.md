@@ -10,4 +10,3 @@
 #### Software {#software}
 
 [Spinnaker]({{< relref "20210407074538-spinnaker" >}})
-

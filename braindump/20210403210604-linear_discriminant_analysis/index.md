@@ -10,4 +10,3 @@
 #### Top {#top}
 
 [Linear Discriminant Analysis]({{< relref "20210403210604-linear_discriminant_analysis" >}})
-

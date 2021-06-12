@@ -42,4 +42,3 @@ Dependent on [Physical Fitness]({{< relref "20210407045325-physical_fitness" >}}
 #### Top {#top}
 
 Highly dependent on [Mental Fitness]({{< relref "20210407045332-mental_fitness" >}}) and [Physical Fitness]({{< relref "20210407045325-physical_fitness" >}})
-

@@ -19,4 +19,3 @@
 #### Top {#top}
 
 [Addictive Substances]({{< relref "20210403215702-addictive_substances" >}})
-
