@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>linux - Category - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/categories/linux/</link>
+        <description>linux - Category - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Cycling through Windows in SwayWM</title>
+    <link>https://sidhartharya.github.io/cycling-through-windows-in-swaywm/</link>
+    <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/cycling-through-windows-in-swaywm/</guid>
+    <description><![CDATA[Some time ago i tried Swaywm , which is one of the top tiling window managers for linux and the only tiling window manager that works well enough on Wayland (for my use case at the very least).
+The only issue with it for me, was that i cannot cycle through windows like i would in any other window manager. Which was an issue for me only because
+ i planned to use multiple window managers from time to time, and the default behavior for most was cycling with super+Tab I would occasionally use other systems that do not belong to me, and they have the same cycling behaviour.]]></description>
+</item></channel>
+</rss>
