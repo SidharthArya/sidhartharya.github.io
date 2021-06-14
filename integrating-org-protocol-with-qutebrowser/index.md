@@ -58,7 +58,7 @@ then
 fi
 
 OUT+="url=$QUTE_URL&title=$QUTE_TITLE&body=$QUTE_SELECTED_TEXT"
-WINDOW=$(xdo id -a Org)
+WINDOW=$(xdo id -N Emacs)
 #bspc node $WINDOW -g hidden=off
 xdo activate $WINDOW
 xdg-open "$OUT"

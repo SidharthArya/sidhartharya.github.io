@@ -12,7 +12,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-14T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-06-14T15:53:09&#43;05:30" />
+<meta property="article:modified_time" content="2021-06-14T15:55:55&#43;05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -34,7 +34,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
             "@type": "WebPage",
             "@id": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/"
         },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "emacs, qutebrowser, orgmode, org, orgprotocol","wordcount":  498 ,
-        "url": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/","datePublished": "2021-06-14T00:00:00+05:30","dateModified": "2021-06-14T15:53:09+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/","datePublished": "2021-06-14T00:00:00+05:30","dateModified": "2021-06-14T15:55:55+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
             "author": {
@@ -210,7 +210,7 @@ MimeType=x-scheme-handler/org-protocol
 <span class="k">fi</span>
 
 <span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;url=</span><span class="nv">$QUTE_URL</span><span class="s2">&amp;title=</span><span class="nv">$QUTE_TITLE</span><span class="s2">&amp;body=</span><span class="nv">$QUTE_SELECTED_TEXT</span><span class="s2">&#34;</span>
-<span class="nv">WINDOW</span><span class="o">=</span><span class="k">$(</span>xdo id -a Org<span class="k">)</span>
+<span class="nv">WINDOW</span><span class="o">=</span><span class="k">$(</span>xdo id -N Emacs<span class="k">)</span>
 <span class="c1">#bspc node $WINDOW -g hidden=off</span>
 xdo activate <span class="nv">$WINDOW</span>
 xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s2">&#34;</span>
