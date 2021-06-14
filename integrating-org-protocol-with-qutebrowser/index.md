@@ -65,7 +65,7 @@ xdg-open "$OUT"
 # notify-send "$OUT"
 ```
 
-This script does require `xdo` by baskerville. You should probably uncommend bspc line if you are using `bspwm`.
+This script does require `xdo` by baskerville. You should probably uncomment bspc line if you are using `bspwm`.
 
 
 ## Emacs Configuration {#emacs-configuration}
