@@ -93,7 +93,7 @@ config.bind('cl', 'spawn --userscript org-protocol store-link')
 
 ## Conclusion {#conclusion}
 
-Now capturing to org mode from qutebrowser should be a breeze. Please leave your comments below if you face any issues.
+Now capturing to org mode from qutebrowser should be a breeze. Please leave your comments below if you face any issues. Script can be found here in my config: [.qutebrowser/org-protocol at master · SidharthArya/.qutebrowser](https://github.com/SidharthArya/.qutebrowser/blob/master/userscripts/org-protocol%20)
 
 
 ## References {#references}
