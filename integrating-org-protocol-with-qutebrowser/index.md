@@ -2,13 +2,16 @@
 
 
 I don't have a good introduction today. So let's just get to the post.
+
 Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 
 
 ## Org Protocol {#org-protocol}
 
-_"org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies."_ For org protocol documentation
+_"org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies."_ From org protocol documentation
+
 Basically we can send some information through the org protocol to emacs server.
+
 Make sure you start an emacs server in your config somewhere, since org protocol requires a server.
 
 ```emacs-lisp

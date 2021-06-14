@@ -6,18 +6,20 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Integrating Org Protocol with Qutebrowser - Sidharth Arya</title><meta name="Description" content="Sidharth Arya&#39;s Personal Blog"><meta property="og:title" content="Integrating Org Protocol with Qutebrowser" />
-<meta property="og:description" content="I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post. Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
+<meta property="og:description" content="I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
+Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-14T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-06-14T15:36:22&#43;05:30" />
+<meta property="article:modified_time" content="2021-06-14T15:53:09&#43;05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Integrating Org Protocol with Qutebrowser"/>
-<meta name="twitter:description" content="I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post. Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
+<meta name="twitter:description" content="I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
+Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies."/>
 <meta name="application-name" content="Sidharth Arya">
 <meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -32,7 +34,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
             "@type": "WebPage",
             "@id": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/"
         },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "emacs, qutebrowser, orgmode, org, orgprotocol","wordcount":  498 ,
-        "url": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/","datePublished": "2021-06-14T00:00:00+05:30","dateModified": "2021-06-14T15:36:22+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/sidhartharya.github.io\/integrating-org-protocol-with-qutebrowser\/","datePublished": "2021-06-14T00:00:00+05:30","dateModified": "2021-06-14T15:53:09+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
             "author": {
@@ -129,12 +131,12 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
     <li><a href="#references">References</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
-Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.</p>
+            </div><div class="content" id="content"><p>I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.</p>
+<p>Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.</p>
 <h2 id="org-protocol">Org Protocol</h2>
-<p><em>&ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot;</em> For org protocol documentation
-Basically we can send some information through the org protocol to emacs server.
-Make sure you start an emacs server in your config somewhere, since org protocol requires a server.</p>
+<p><em>&ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot;</em> From org protocol documentation</p>
+<p>Basically we can send some information through the org protocol to emacs server.</p>
+<p>Make sure you start an emacs server in your config somewhere, since org protocol requires a server.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1

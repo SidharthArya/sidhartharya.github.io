@@ -61,7 +61,8 @@ Why use pass instead of SSH  Anyone who can gain access to your computer (physic
     <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</guid>
-    <description><![CDATA[I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post. Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
+    <description><![CDATA[I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
+Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.]]></description>
 </item></channel>
 </rss>
