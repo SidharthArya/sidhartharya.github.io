@@ -10,8 +10,8 @@
     <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</guid>
-    <description><![CDATA[Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot; For org protocol documentation Basically we can send some information through the org protocol to emacs server. Make sure you start an emacs server in your config somewhere, since org protocol requires a server.
-1 2  (server-start) (require &#39;org-protocol)   org-protocol is not loaded by default with org. So make sure you require it explicitely too.]]></description>
+    <description><![CDATA[I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post. Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
+Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.]]></description>
 </item><item>
     <title>Cycling through Windows in SwayWM</title>
     <link>https://sidhartharya.github.io/cycling-through-windows-in-swaywm/</link>
