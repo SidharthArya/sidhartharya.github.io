@@ -4,7 +4,7 @@
         <link>https://sidhartharya.github.io/categories/coding/</link>
         <description>coding - Category - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/categories/coding/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/categories/coding/" rel="self" type="application/rss+xml" /><item>
     <title>Running ipython inside a python script</title>
     <link>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</link>
     <pubDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</pubDate>
@@ -28,5 +28,13 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
     <guid>https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/</guid>
     <description><![CDATA[People often use SSH to avoid entering their username and password while pushing commits to github or gitlab. I like to use this excellent unix password utility called Pass .
 Why use pass instead of SSH  Anyone who can gain access to your computer (physical, or through some form of hacking) can push changes to your github. the gpg-agent locks itself after some time has elapsed You can kill the gpg-agent when you are not not using the machine Github recommends using personal access tokens  A disadvantage though is, you will have to enter your password store password from time to time.]]></description>
+</item><item>
+    <title>Integrating Org Protocol with Qutebrowser</title>
+    <link>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</link>
+    <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</guid>
+    <description><![CDATA[Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot; For org protocol documentation Basically we can send some information through the org protocol to emacs server. Make sure you start an emacs server in your config somewhere, since org protocol requires a server.
+1 2  (server-start) (require &#39;org-protocol)   org-protocol is not loaded by default with org. So make sure you require it explicitely too.]]></description>
 </item></channel>
 </rss>
