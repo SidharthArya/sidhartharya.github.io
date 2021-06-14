@@ -44,7 +44,7 @@ All it says is, if there is an address we want to open that begins with `org-pro
 Save the script given below to `~/.config/qutebrowser/userscripts/org-protocol` or `~/.local/share/qutebrowser/userscripts/org-protocol`. And change permission to executable by `chmod +x ~/.config/qutebrowser/userscripts/org-protocol`.
 
 ```bash
-#!/bin/sh
+#!/usr/bin/env bash
 PROTOCOL="$1"
 TEMPLATE="$2"
 QUTE_URL=$(echo $QUTE_URL |python -c "import sys;from urllib.parse import quote;print(quote(sys.stdin.readline()))")
