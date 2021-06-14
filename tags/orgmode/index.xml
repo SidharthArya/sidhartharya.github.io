@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>orgmode - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/orgmode/</link>
+        <description>orgmode - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/orgmode/" rel="self" type="application/rss+xml" /><item>
+    <title>Integrating Org Protocol with Qutebrowser</title>
+    <link>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</link>
+    <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</guid>
+    <description><![CDATA[Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot; For org protocol documentation Basically we can send some information through the org protocol to emacs server. Make sure you start an emacs server in your config somewhere, since org protocol requires a server.
+1 2  (server-start) (require &#39;org-protocol)   org-protocol is not loaded by default with org. So make sure you require it explicitely too.]]></description>
+</item></channel>
+</rss>

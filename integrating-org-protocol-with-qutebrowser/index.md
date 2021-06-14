@@ -32,7 +32,7 @@ MimeType=x-scheme-handler/org-protocol
 All it says is, if there is an address we want to open that begins with `org-protocol:/` redirect it to the emacsclient. But in case emacs server is not open or there is no handler for the requested protocol, the url will be handled by the next defined handler which would be a web browser. So make sure your emacs server is running. You can find the available org protocols in the variable `org-protocol-protocol-alist` or `org-protocol-protocol-alist-default`.
 
 
-## Org Capture Script {#org-capture-script}
+## Org Protocol Script {#org-protocol-script}
 
 Save the script given below to `~/.config/qutebrowser/userscripts/org-protocol` or `~/.local/share/qutebrowser/userscripts/org-protocol`. And change permission to executable by `chmod +x ~/.config/qutebrowser/userscripts/org-protocol`.
 
