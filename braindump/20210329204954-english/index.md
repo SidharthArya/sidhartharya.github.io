@@ -23,12 +23,9 @@ a large hook}@0}
 an excessive willingness to serve or please others
 
 
-## Backlink {#backlink}
+### Laceration {#laceration}
+
+A deep cut or tear in skin or flesh
 
 
-### [Psychedelics]({{< relref "20210403215317-psychedelics" >}}) {#psychedelics--20210403215317-psychedelics-dot-md}
-
-
-#### Top {#top}
-
-[Mescaline]({{< relref "20210403215423-mescaline" >}})
+## No backlinks! {#no-backlinks}
