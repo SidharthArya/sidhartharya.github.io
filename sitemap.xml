@@ -3,19 +3,42 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
             <loc>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</loc><lastmod>2021-06-03T21:09:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/what-is-this-blog-about/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</loc><lastmod>2021-06-03T21:09:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sidhartharya.github.io/what-is-this-blog-about/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/cycling-through-windows-in-swaywm/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/braindump/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/braindump/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/braindump/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/braindump/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210620012349-omics_technologies/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/</loc><lastmod>2021-06-20T01:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418113309-binary_search_tree/</loc><lastmod>2021-06-20T00:43:12&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/data-structures/</loc><lastmod>2021-06-20T00:43:12&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/data-structures/</loc><lastmod>2021-06-20T00:43:12&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210419084022-treap/</loc><lastmod>2021-06-20T00:43:12&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205953-bird/</loc><lastmod>2021-06-19T21:00:25&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205843-theropod/</loc><lastmod>2021-06-19T21:00:25&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205817-black/</loc><lastmod>2021-06-19T20:58:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205810-green/</loc><lastmod>2021-06-19T20:58:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205758-mosquito/</loc><lastmod>2021-06-19T20:58:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619205821-red/</loc><lastmod>2021-06-19T20:58:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619203710-roberta/</loc><lastmod>2021-06-19T20:37:11&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619203634-bert/</loc><lastmod>2021-06-19T20:37:02&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619203542-gpt/</loc><lastmod>2021-06-19T20:36:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210619203032-hermit_crabs/</loc><lastmod>2021-06-19T20:30:38&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617164930-united_states_of_america/</loc><lastmod>2021-06-19T03:23:50&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210610211523-bhagavad_geeta/</loc><lastmod>2021-06-18T22:06:42&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617173253-tensor/</loc><lastmod>2021-06-17T17:35:10&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617164655-abraham_lincoln/</loc><lastmod>2021-06-17T17:30:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617041314-ensemble_learning/</loc><lastmod>2021-06-17T04:13:32&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617041320-bagging/</loc><lastmod>2021-06-17T04:13:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617041325-boosting/</loc><lastmod>2021-06-17T04:13:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210617041329-stacking/</loc><lastmod>2021-06-17T04:13:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210616012551-eye_movement_desensitization_and_reprocessing_therapy/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/</loc><lastmod>2021-06-16T01:26:00&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210616012453-amytal_therapy/</loc><lastmod>2021-06-16T01:24:55&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210616012441-hypnosis/</loc><lastmod>2021-06-16T01:24:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210329204954-english/</loc><lastmod>2021-06-15T19:22:18&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -53,22 +76,22 @@
             <loc>https://sidhartharya.github.io/tags/swaywm/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/window-manager/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/windowmanager/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210612233252-algotrading/</loc><lastmod>2021-06-12T23:33:32&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210406125520-algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418193547-divide_and_conquer/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418193610-backtracking/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418193626-branch_and_bound/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418193604-dynamic_programming/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418193558-greedy_algorithm/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210612233252-algotrading/</loc><lastmod>2021-06-12T23:33:32&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210406125520-algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/algorithms/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418193547-divide_and_conquer/</loc><lastmod>2021-06-12T14:47:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418193610-backtracking/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418193626-branch_and_bound/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418193604-dynamic_programming/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210418193558-greedy_algorithm/</loc><lastmod>2021-06-12T14:47:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/automation/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/git/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/github/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/pass/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/password/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/security/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210611202202-elevator_pitch/</loc><lastmod>2021-06-11T20:24:01&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210611202202-elevator_pitch/</loc><lastmod>2021-06-11T20:24:01&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/schmidhuber15_deep_learn_neural_networ/</loc><lastmod>2021-06-10T00:10:01&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/papers/</loc><lastmod>2021-06-10T00:10:01&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/categories/papers/</loc><lastmod>2021-06-10T00:10:01&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
@@ -207,7 +230,6 @@
             <loc>https://sidhartharya.github.io/braindump/20210419181118-mexico/</loc><lastmod>2021-06-10T00:08:55&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210419153311-cosmology/</loc><lastmod>2021-06-10T00:08:54&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210419133327-penrose_diagram/</loc><lastmod>2021-06-10T00:08:54&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210419084022-treap/</loc><lastmod>2021-06-10T00:08:54&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210419081757-corona_virus/</loc><lastmod>2021-06-10T00:08:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210419080159-heap/</loc><lastmod>2021-06-10T00:08:53&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210419080012-big_m_method/</loc><lastmod>2021-06-10T00:08:52&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
@@ -220,12 +242,9 @@
             <loc>https://sidhartharya.github.io/braindump/20210418194032-merge_sort/</loc><lastmod>2021-06-10T00:08:49&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418194036-quick_sort/</loc><lastmod>2021-06-10T00:08:49&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418194026-sorting/</loc><lastmod>2021-06-10T00:08:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/data-structures/</loc><lastmod>2021-06-10T00:08:45&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/data-structures/</loc><lastmod>2021-06-10T00:08:45&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418113943-string/</loc><lastmod>2021-06-10T00:08:45&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418115153-trie/</loc><lastmod>2021-06-10T00:08:45&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418142157-vitamin_b7/</loc><lastmod>2021-06-10T00:08:45&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210418113309-binary_search_tree/</loc><lastmod>2021-06-10T00:08:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418113931-rope/</loc><lastmod>2021-06-10T00:08:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418113258-binary_tree/</loc><lastmod>2021-06-10T00:08:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210418095343-investment/</loc><lastmod>2021-06-10T00:08:43&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
@@ -711,6 +730,6 @@
             <loc>https://sidhartharya.github.io/tags/browser/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/dev/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/hacking/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/python/</loc><lastmod>2021-06-03T21:09:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/blog/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/rss/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url></urlset>
+            <loc>https://sidhartharya.github.io/tags/python/</loc><lastmod>2021-06-03T21:09:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/blog/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/rss/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url></urlset>
