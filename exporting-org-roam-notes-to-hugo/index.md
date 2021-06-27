@@ -67,7 +67,9 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 (defun org-hugo--org-roam-backlinks (backend)
   (when (equal backend 'hugo)
   (when (org-roam--org-roam-file-p)
+    (beginning-of-buffer)
     (replace-string "{" "")
+    (beginning-of-buffer)
     (replace-string "}" "")
     (end-of-buffer)
     (org-roam-buffer--insert-backlinks))))
@@ -211,4 +213,3 @@ Please write your feedbacks in the comment sectin below. I feel the need to brea
 -   [kaushalmodi/ox-hugo](https://github.com/kaushalmodi/ox-hugo)
 -   [Ox-hugo export all roam to Hugo | Ben Mezger](https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/)
 -   [jethrokuan/braindump: knowledge repository managed with org-mode and org-roam.](https://github.com/jethrokuan/braindump)
-

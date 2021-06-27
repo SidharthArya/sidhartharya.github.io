@@ -2,20 +2,26 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</loc><lastmod>2021-06-03T21:09:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://sidhartharya.github.io/what-is-this-blog-about/</loc><lastmod>2021-06-04T14:21:26&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
             <loc>https://sidhartharya.github.io/cycling-through-windows-in-swaywm/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/</loc><lastmod>2021-06-13T21:33:19&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/braindump/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/braindump/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210620190948-agglutinative_language/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/braindump/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/braindump/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/fc/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/fc/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20210620190844-korean/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/languages/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/categories/languages/</loc><lastmod>2021-06-27T17:41:29&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210627163929-stanford_university/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/</loc><lastmod>2021-06-27T16:39:31&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210626211617-confucianism/</loc><lastmod>2021-06-26T21:16:18&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210626211604-taoism/</loc><lastmod>2021-06-26T21:16:06&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210414172548-autoencoders/</loc><lastmod>2021-06-26T13:46:09&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -46,12 +52,6 @@
             <loc>https://sidhartharya.github.io/braindump/20210624190241-atheism/</loc><lastmod>2021-06-24T19:03:02&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210624190132-god/</loc><lastmod>2021-06-24T19:03:02&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210624190119-monotheism/</loc><lastmod>2021-06-24T19:02:22&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210620190948-agglutinative_language/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/fc/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/fc/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/braindump/20210620190844-korean/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/languages/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sidhartharya.github.io/categories/languages/</loc><lastmod>2021-06-23T10:26:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210623000642-digital_audio_access_protocol/</loc><lastmod>2021-06-23T00:06:48&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210622205224-vitamin_b5/</loc><lastmod>2021-06-22T20:53:02&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210622205137-vitamin_b2/</loc><lastmod>2021-06-22T20:52:02&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -123,13 +123,13 @@
             <loc>https://sidhartharya.github.io/braindump/20210614170512-bipolar_disorder/</loc><lastmod>2021-06-14T17:05:13&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210614163931-dissociative_identity_disorder/</loc><lastmod>2021-06-14T17:05:04&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/categories/coding/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/emacs/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/emacs/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/linux/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/categories/linux/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/org/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/org/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/orgmode/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/orgprotocol/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://sidhartharya.github.io/posts/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sidhartharya.github.io/posts/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/categories/programming/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/qutebrowser/</loc><lastmod>2021-06-14T18:18:44&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/sway/</loc><lastmod>2021-06-14T00:31:39&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
@@ -766,11 +766,11 @@
             <loc>https://sidhartharya.github.io/braindump/20210328211847-flutter/</loc><lastmod>2021-06-10T00:05:18&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/startup/</loc><lastmod>2021-06-10T00:05:18&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/categories/startup/</loc><lastmod>2021-06-10T00:05:18&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/blog/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/hugo/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/org-roam/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/ox-hugo/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://sidhartharya.github.io/tags/website/</loc><lastmod>2021-06-07T20:48:56&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/blog/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/hugo/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/org-roam/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/ox-hugo/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/website/</loc><lastmod>2021-06-27T17:42:24&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/browser/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/dev/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/hacking/</loc><lastmod>2021-06-10T00:04:58&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>

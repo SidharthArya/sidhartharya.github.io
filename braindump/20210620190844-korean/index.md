@@ -13,7 +13,7 @@
 |----------|------|-----|----------|----------------------|
 | 0        | 2.50 | 2   | 1.00     | 2021-06-24T04:26:26Z |
 
-Every block needs at least {{one consonant and one vowel}@0}
+Every block needs at least one consonant and one vowel@0
 
 
 ## Alphabets {#alphabets}
@@ -25,7 +25,7 @@ Every block needs at least {{one consonant and one vowel}@0}
 |----------|------|-----|----------|----------------------|
 | 0        | 2.50 | 2   | 1.00     | 2021-06-24T04:26:10Z |
 
-ee}@0}
+ee@0
 
 
 ### ㅏ {#ㅏ}
