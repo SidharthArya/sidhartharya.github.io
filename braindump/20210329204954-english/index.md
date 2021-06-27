@@ -28,4 +28,9 @@ an excessive willingness to serve or please others
 A deep cut or tear in skin or flesh
 
 
+### Honorifics {#honorifics}
+
+An honorific is a title that conveys esteem, courtesy, or respect for position or rank when used in addressing or referring to a person.
+
+
 ## No backlinks! {#no-backlinks}

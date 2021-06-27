@@ -25,4 +25,9 @@ Why required?
 Special treatment required to remove the possibility of duplication?
 
 
+### Function {#function}
+
+-   [Denoising Autoencoder]({{< relref "20210626134533-denoising_autoencoder" >}})
+
+
 ## No backlinks! {#no-backlinks}

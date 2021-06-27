@@ -13,6 +13,7 @@ Inspired from: [Neurons]({{< relref "20210403211940-neurons" >}})
 -   [Acyclic Networks]({{< relref "20210403212158-acyclic_networks" >}})
 -   [Recurrent Networks]({{< relref "20210403212626-recurrent_networks" >}})
 -   [Modular Networks]({{< relref "20210403212639-modular_networks" >}})
+-   [Graph Neural Network]({{< relref "20210620113957-graph_neural_network" >}})
 
 
 ## Concepts {#concepts}
