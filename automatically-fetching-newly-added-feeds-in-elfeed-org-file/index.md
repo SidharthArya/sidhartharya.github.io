@@ -11,7 +11,7 @@ I have tried all sorts of rss feed readers, commercial and non commercial, but n
 But this article is not about all the glorious things elfeed can do. It is about one of my quick dirty hacks to make my life slightly easier.
 
 A very particular nuisance for me was to add a feed in the elfeed-org and manually update that feed, and run hooks. Either i did that, or i directly ran `elfeed-update` command which updates all my feeds.
-That is a really bad idea. Since the more requests you make to a server, the more the chance that you will get blocked for misusing it. Many websites don't block you though, but some do, either permanently or partially.
+That is a really bad idea. Since the more requests you make to a server, the more the chance that you will get blocked for misusing it. Many websites don't block you though, but some do, either permanently or temporarily.
 
 The function i wrote is given below:
 
@@ -39,3 +39,4 @@ I add the given lines to the top of my `feeds.org` file.
 ```
 
 You will get an unsafe variable prompt every time you save the file thereafter. But, now your feeds will be immediately fetched when you update the feeds.org file.
+
