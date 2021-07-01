@@ -3,6 +3,8 @@
 
 A non-human program or model that can solve sophisticated tasks.
 
+"The Designing and building of intelligent agents that receive percepts from the environment and take actions that effect that environment.
+
 
 ## Sub Domains {#sub-domains}
 

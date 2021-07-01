@@ -4,7 +4,7 @@
         <link>https://sidhartharya.github.io/categories/programming/</link>
         <description>programming - Category - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/categories/programming/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/categories/programming/" rel="self" type="application/rss+xml" /><item>
     <title>Running ipython inside a python script</title>
     <link>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</link>
     <pubDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</pubDate>
@@ -37,5 +37,12 @@ Why use pass instead of SSH  Anyone who can gain access to your computer (physic
     <description><![CDATA[I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
 Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.]]></description>
+</item><item>
+    <title>Automatically fetching newly added feeds in elfeed org file</title>
+    <link>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
+    <pubDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
+    <description><![CDATA[The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file.]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>feeds - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/feeds/</link>
+        <description>feeds - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/feeds/" rel="self" type="application/rss+xml" /><item>
+    <title>Automatically fetching newly added feeds in elfeed org file</title>
+    <link>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
+    <pubDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
+    <description><![CDATA[The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file.]]></description>
+</item></channel>
+</rss>
