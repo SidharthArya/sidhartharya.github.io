@@ -1,6 +1,9 @@
 # LightGBM
 
 
+[Boosting]({{< relref "20210617041325-boosting" >}}) model
+
+
 ## Backlink {#backlink}
 
 

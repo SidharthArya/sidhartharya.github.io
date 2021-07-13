@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/sidhartharya.github.io\/automatically-fetching-newly-added-feeds-in-elfeed-org-file\/"
-        },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "elfeed, emacs, org, rss, feeds, hacking","wordcount":  382 ,
+        },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "elfeed, emacs, org, rss, feeds, hacking","wordcount":  411 ,
         "url": "https:\/\/sidhartharya.github.io\/automatically-fetching-newly-added-feeds-in-elfeed-org-file\/","datePublished": "2021-07-01T00:00:00+05:30","dateModified": "2021-07-01T20:26:03+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
@@ -109,7 +109,7 @@
         </div><article class="page single"><h1 class="single-title animated flipInX">Automatically fetching newly added feeds in elfeed org file</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="sidhartharya.me" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sidharth Arya</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/coding/"><i class="far fa-folder fa-fw"></i>coding</a>&nbsp;<a href="/categories/programming/"><i class="far fa-folder fa-fw"></i>programming</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-01">2021-07-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;382 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-01">2021-07-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;411 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -127,7 +127,7 @@
 <p>I have tried all sorts of rss feed readers, commercial and non commercial, but none compare to the flexibility and robustness of elfeed. Tagging. Filtering. Extensibility. What does it not have? It can do all sorts of things. You can tag an entry based on what keywords it contains. For example, if a news item contains the keyword &ldquo;Bitcoin&rdquo; then it&rsquo;s probably a good idea to tag it as crypto.</p>
 <p>But this article is not about all the glorious things elfeed can do. It is about one of my quick dirty hacks to make my life slightly easier.</p>
 <p>A very particular nuisance for me was to add a feed in the elfeed-org and manually update that feed, and run hooks. Either i did that, or i directly ran <code>elfeed-update</code> command which updates all my feeds.
-That is a really bad idea. Since the more requests you make to a server, the more the chance that you will get blocked for misusing it. Many websites don&rsquo;t block you though, but some do, either permanently or temporarily.</p>
+That is a really bad idea. Since the more requests you make to a server, the more the chance that you will get blocked for misusing it. Many websites don&rsquo;t block you though, but some do, either permanently or partially.</p>
 <p>The function i wrote is given below:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -173,6 +173,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 </code></pre></td></tr></table>
 </div>
 </div><p>You will get an unsafe variable prompt every time you save the file thereafter. But, now your feeds will be immediately fetched when you update the feeds.org file.</p>
+<p>Well, actually i don&rsquo;t really use the above file setting. I use <code>(setq-global after-save-hook 'my-elfeed-org-update)</code> in my config since i use different instance for elfeed using my <code>modular-config</code> package.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

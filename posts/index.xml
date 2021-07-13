@@ -4,7 +4,14 @@
         <link>https://sidhartharya.github.io/posts/</link>
         <description>All Posts | Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Using custom plymouth theme on nixos</title>
+    <link>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</link>
+    <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</guid>
+    <description><![CDATA[Almost anything you can think of to do with your linux system, can possibly be done in nixos. And it would also be reproducible at that. So i set out to get a custom theme for my boot up screen which is usually provided by plymouth in linux. Since we need to add a new theme to the system we should do that by creating a new package for the same.]]></description>
+</item><item>
     <title>Installing a custom emacs package in nix</title>
     <link>https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/</link>
     <pubDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</pubDate>
@@ -69,13 +76,5 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
     <author>Author</author>
     <guid>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</guid>
     <description><![CDATA[Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?]]></description>
-</item><item>
-    <title>What is this blog about</title>
-    <link>https://sidhartharya.github.io/what-is-this-blog-about/</link>
-    <pubDate>Wed, 02 Jun 2021 00:00:00 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://sidhartharya.github.io/what-is-this-blog-about/</guid>
-    <description><![CDATA[To blog - To share, To connect, To create, To inspire
-To be honest, i wanted to start my blog in an incredibly attractive way, and so i searched a quote. And&hellip;. here we are. A quote i found on google, that makes it seem like my blog has a lot of purpose behind it. But, how exactly do you make an introduction attractive enough for you to gain enough ad revenue is all i am thinking right now.]]></description>
 </item></channel>
 </rss>

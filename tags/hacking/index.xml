@@ -4,7 +4,7 @@
         <link>https://sidhartharya.github.io/tags/hacking/</link>
         <description>hacking - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/hacking/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/hacking/" rel="self" type="application/rss+xml" /><item>
     <title>Running ipython inside a python script</title>
     <link>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</link>
     <pubDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</pubDate>
@@ -27,5 +27,12 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
     <author>Author</author>
     <guid>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
     <description><![CDATA[The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file.]]></description>
+</item><item>
+    <title>Using custom plymouth theme on nixos</title>
+    <link>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</link>
+    <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</guid>
+    <description><![CDATA[Almost anything you can think of to do with your linux system, can possibly be done in nixos. And it would also be reproducible at that. So i set out to get a custom theme for my boot up screen which is usually provided by plymouth in linux. Since we need to add a new theme to the system we should do that by creating a new package for the same.]]></description>
 </item></channel>
 </rss>

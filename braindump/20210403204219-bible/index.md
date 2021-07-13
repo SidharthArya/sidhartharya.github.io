@@ -11,7 +11,7 @@
 -   [The Book of Adam and Eve]({{< relref "20210627193219-the_book_of_adam_and_eve" >}})
 -   [The Book of Enoch]({{< relref "20210627193238-the_book_of_enoch" >}})
 -   [Psalms of Solomon]({{< relref "20210627194421-psalms_of_solomon" >}})
--   [The Odes of Solomon]({{< relref "20210627194459-the_odes_of_solomon" >}})n
+-   [The Odes of Solomon]({{< relref "20210627194459-the_odes_of_solomon" >}})
 
 
 ## Backlink {#backlink}
