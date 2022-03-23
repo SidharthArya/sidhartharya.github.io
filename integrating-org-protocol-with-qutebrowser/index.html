@@ -11,8 +11,8 @@ Org mode provides something called org protocol in order to let other applicatio
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-14T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-07-01T20:26:03&#43;05:30" />
+<meta property="article:published_time" content="2021-06-14T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-07-01T20:26:03+05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -139,11 +139,11 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 <p>Make sure you start an emacs server in your config somewhere, since org protocol requires a server.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">server-start</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">server-start</span><span class="p">)</span>
 <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-protocol</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -152,7 +152,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 <p>You need to add the config given below to <code>~/.local/share/applications/org-protocol.desktop</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -161,7 +161,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[Desktop Entry]
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[Desktop Entry]
 Name=Org-Protocol
 Exec=emacsclient %u
 Icon=emacs-icon
@@ -175,7 +175,7 @@ MimeType=x-scheme-handler/org-protocol
 <p>Save the script given below to <code>~/.config/qutebrowser/userscripts/org-protocol</code> or <code>~/.local/share/qutebrowser/userscripts/org-protocol</code>. And change permission to executable by <code>chmod +x ~/.config/qutebrowser/userscripts/org-protocol</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -196,7 +196,7 @@ MimeType=x-scheme-handler/org-protocol
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/usr/bin/env bash
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/usr/bin/env bash
 </span><span class="cp"></span><span class="nv">PROTOCOL</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
 <span class="nv">TEMPLATE</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span>
 <span class="nv">QUTE_URL</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$QUTE_URL</span> <span class="p">|</span>python -c <span class="s2">&#34;import sys;from urllib.parse import quote;print(quote(sys.stdin.readline()))&#34;</span><span class="k">)</span>
@@ -222,14 +222,14 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
 <p>I recommend adding a separate category for protocol in capture templates if you are going to be using org-capture protocol. One capture template that i have for org-protocol is given below.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
 <span class="o">&#39;</span><span class="p">((</span><span class="s">&#34;P&#34;</span> <span class="s">&#34;Protocol&#34;</span><span class="p">)</span>
 <span class="p">(</span><span class="s">&#34;Pi&#34;</span> <span class="s">&#34;Important&#34;</span><span class="p">)</span>
 <span class="p">(</span><span class="s">&#34;Pit&#34;</span> <span class="s">&#34;Today&#34;</span> <span class="nv">entry</span> <span class="p">(</span><span class="nv">file+headline</span> <span class="s">&#34;~/Documents/Org/Agenda/notes.org&#34;</span> <span class="s">&#34;Websites&#34;</span><span class="p">)</span>
@@ -240,11 +240,11 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
 <p>Now that we have setup everything for the userscript to work. All we have to do is add the corresponding keybindings to qutebrowser.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cit&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol capture Pit&#39;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cit&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol capture Pit&#39;</span><span class="p">)</span>
 <span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol store-link&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -299,7 +299,7 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

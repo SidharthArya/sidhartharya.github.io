@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>HTTP - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/http/</link>
+        <description>HTTP - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.github.io/tags/http/" rel="self" type="application/rss+xml" /><item>
+    <title>Hyper Text Transfer Protocol</title>
+    <link>https://sidhartharya.github.io/braindump/20220223204315-hyper_text_transfer_protocol/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20220223204315-hyper_text_transfer_protocol/</guid>
+    <description><![CDATA[Error Codes 302 ]]></description>
+</item></channel>
+</rss>

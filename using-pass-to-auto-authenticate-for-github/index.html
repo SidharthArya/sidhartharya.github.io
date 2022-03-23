@@ -10,8 +10,8 @@
 Why use pass instead of SSH  Anyone who can gain access to your computer (physical, or through some form of hacking) can push changes to your github. the gpg-agent locks itself after some time has elapsed You can kill the gpg-agent when you are not not using the machine Github recommends using personal access tokens  A disadvantage though is, you will have to enter your password store password from time to time." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-12T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-07-01T20:26:03&#43;05:30" />
+<meta property="article:published_time" content="2021-06-12T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-07-01T20:26:03+05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -158,11 +158,11 @@ In a nutshell,</p>
 <p>Now that we have stored the Personal Access Token in our password store. All we have to do is write a small script that we can call to get this password.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
 </span><span class="cp"></span>pass <span class="s2">&#34;Github/PAT&#34;</span> <span class="p">|</span> head -n <span class="m">1</span>
 </code></pre></td></tr></table>
 </div>
@@ -173,10 +173,10 @@ In a nutshell,</p>
 <p>In your <code>.bashrc</code> or <code>.zshrc</code> place something as shown below. In windows you would probably need to use the Environment Variables.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">export</span> <span class="nv">GIT_ASKPASS</span><span class="o">=</span><span class="s2">&#34;path_to_script_defined/git_pass.sh&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">export</span> <span class="nv">GIT_ASKPASS</span><span class="o">=</span><span class="s2">&#34;path_to_script_defined/git_pass.sh&#34;</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="further-securing">Further Securing</h2>
@@ -184,13 +184,13 @@ In a nutshell,</p>
 I execute a <code>lock.sh</code> for locking the screen, as given below. In order to make this execute for locking screen i use <code>xss-lock lock.sh</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
 </span><span class="cp"></span>gpgconf --kill gpg-agent
 <span class="nv">XDG_SEAT_PATH</span><span class="o">=</span><span class="s2">&#34;/org/freedesktop/DisplayManager/Seat0&#34;</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0 slock
 sleep <span class="m">3</span>
@@ -247,7 +247,7 @@ sleep <span class="m">3</span>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

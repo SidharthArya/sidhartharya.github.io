@@ -9,8 +9,8 @@
 <meta property="og:description" content="The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-07-01T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-07-01T20:26:03&#43;05:30" />
+<meta property="article:published_time" content="2021-07-01T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-07-18T09:34:37+05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -30,7 +30,7 @@
             "@type": "WebPage",
             "@id": "https:\/\/sidhartharya.github.io\/automatically-fetching-newly-added-feeds-in-elfeed-org-file\/"
         },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "elfeed, emacs, org, rss, feeds, hacking","wordcount":  411 ,
-        "url": "https:\/\/sidhartharya.github.io\/automatically-fetching-newly-added-feeds-in-elfeed-org-file\/","datePublished": "2021-07-01T00:00:00+05:30","dateModified": "2021-07-01T20:26:03+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/sidhartharya.github.io\/automatically-fetching-newly-added-feeds-in-elfeed-org-file\/","datePublished": "2021-07-01T00:00:00+05:30","dateModified": "2021-07-18T09:34:37+05:30","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
             "author": {
@@ -131,7 +131,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 <p>The function i wrote is given below:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -145,7 +145,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dash</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dash</span><span class="p">)</span>
 <span class="p">(</span><span class="nb">defun</span> <span class="nv">my-elfeed-org-update</span> <span class="p">()</span>
   <span class="s">&#34;AUtomatically Update the feeds from feeds.org when updated&#34;</span>
    <span class="p">(</span><span class="nb">setq</span> <span class="nv">my-elfeed-org-last</span> <span class="p">(</span><span class="nb">or</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nf">boundp</span> <span class="ss">&#39;elfeed-feeds</span><span class="p">)</span> <span class="nv">elfeed-feeds</span><span class="p">)</span> <span class="no">nil</span><span class="p">))</span>
@@ -162,12 +162,12 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 </div><p>I add the given lines to the top of my <code>feeds.org</code> file.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-org" data-lang="org"><span class="c"># Local Variables:</span>
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c"># Local Variables:</span>
 <span class="c"># after-save-hook: my-elfeed-org-update</span>
 <span class="c"># END:</span>
 </code></pre></td></tr></table>
@@ -178,8 +178,8 @@ That is a really bad idea. Since the more requests you make to a server, the mor
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-07-01&nbsp;<a class="git-hash" href="https://github.com/SidharthAyra/blog/commit/fe7b2d1ae561da1383ef77820f3c00bb98ce6b35" target="_blank" title="commit by Sidharth Arya(sidhartharya10@gmail.com) fe7b2d1ae561da1383ef77820f3c00bb98ce6b35: Initial Commit">
-                                    <i class="fas fa-hashtag fa-fw"></i>fe7b2d1</a></span>
+                <span>Updated on 2021-07-18&nbsp;<a class="git-hash" href="https://github.com/SidharthAyra/blog/commit/1d23a43e15f2f578357d7bb5885bd3e1305b4926" target="_blank" title="commit by Sidharth Arya(sidhartharya10@gmail.com) 1d23a43e15f2f578357d7bb5885bd3e1305b4926: Manual Commit">
+                                    <i class="fas fa-hashtag fa-fw"></i>1d23a43</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -194,7 +194,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/elfeed/">elfeed</a>,&nbsp;<a href="/tags/emacs/">emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/rss/">rss</a>,&nbsp;<a href="/tags/feeds/">feeds</a>,&nbsp;<a href="/tags/hacking/">hacking</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/elfeed/">elfeed</a>,&nbsp;<a href="/tags/emacs/">emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/rss/">RSS</a>,&nbsp;<a href="/tags/feeds/">feeds</a>,&nbsp;<a href="/tags/hacking/">hacking</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
@@ -207,7 +207,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

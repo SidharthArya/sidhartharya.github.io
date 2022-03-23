@@ -9,8 +9,8 @@
 <meta property="og:description" content="Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/running-ipython-inside-a-python-script/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-03T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-07-01T20:26:03&#43;05:30" />
+<meta property="article:published_time" content="2021-06-03T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-07-01T20:26:03+05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -128,12 +128,12 @@
 This is a fairly basic thing to do but i find it incredibly useful. In my case, i like having a shell which i can interact, if for example i am algotrading. A simple pause function can be triggered within ipython, and manual trading can be done before switching back to algotrading.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Some Threaded Code running in the background</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Some Threaded Code running in the background</span>
 <span class="kn">import</span> <span class="nn">IPython</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">embed</span><span class="p">()</span>
 </code></pre></td></tr></table>
@@ -142,7 +142,7 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
 <p>Alternatively you can make use of an eval statement</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -153,10 +153,10 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Put this at the top of your program</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Put this at the top of your program</span>
 <span class="kn">import</span> <span class="nn">readline</span>
 <span class="k">def</span> <span class="nf">interactive_eval</span><span class="p">():</span>
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 <span class="n">i_eval</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">interactive_eval</span><span class="p">)</span>
 <span class="n">i_eval</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
@@ -203,7 +203,7 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

@@ -10,8 +10,8 @@
 Introduction GNU Emacs is truly an amazing software. It can work as a text editor, a news feed reader, email reader, IDE, and much more. One of the truly amazing things i found on emacs was Org mode . Org mode is really a markup language which has all sorts of amazing features." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-07T00:00:00&#43;05:30" />
-<meta property="article:modified_time" content="2021-07-01T20:26:03&#43;05:30" />
+<meta property="article:published_time" content="2021-06-07T00:00:00+05:30" />
+<meta property="article:modified_time" content="2021-07-01T20:26:03+05:30" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
@@ -22,7 +22,7 @@ Introduction GNU Emacs is truly an amazing software. It can work as a text edito
 <meta name="application-name" content="Sidharth Arya">
 <meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" /><link rel="prev" href="https://sidhartharya.github.io/running-ipython-inside-a-python-script/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/" /><link rel="prev" href="https://sidhartharya.github.io/running-ipython-inside-a-python-script/" /><link rel="next" href="https://sidhartharya.github.io/a-sinful-smile/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -164,11 +164,11 @@ Please ensure you have the latest <code>ox-hugo</code>.</p>
 <p>Place a <code>.dir-locals.el</code> file in <code>org-roam-directory</code> with the content as given below.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">org-hugo-base-dir</span> <span class="o">.</span> <span class="s">&#34;~/.blog&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">org-hugo-base-dir</span> <span class="o">.</span> <span class="s">&#34;~/.blog&#34;</span><span class="p">)</span>
          <span class="p">(</span><span class="nv">org-hugo-section</span> <span class="o">.</span> <span class="s">&#34;braindump&#34;</span><span class="p">))))</span>
 </code></pre></td></tr></table>
 </div>
@@ -181,7 +181,7 @@ For me i use two sections, one for blog posts and one form braindump from org-ro
 <p>Adding the code given below adds the capability for ox-hugo to process your org-roam tags.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -193,7 +193,7 @@ For me i use two sections, one for blog posts and one form braindump from org-ro
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--tag-processing-fn-roam-tags</span><span class="p">(</span><span class="nv">tag-list</span> <span class="nv">info</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--tag-processing-fn-roam-tags</span><span class="p">(</span><span class="nv">tag-list</span> <span class="nv">info</span><span class="p">)</span>
   <span class="s">&#34;Process org roam tags for org hugo&#34;</span>
   <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
       <span class="p">(</span><span class="nf">append</span> <span class="nv">tag-list</span>
@@ -210,7 +210,7 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 <h2 id="backlinks-processing">Backlinks Processing</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -222,7 +222,7 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-backlinks</span> <span class="p">(</span><span class="nv">backend</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-backlinks</span> <span class="p">(</span><span class="nv">backend</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">equal</span> <span class="nv">backend</span> <span class="ss">&#39;hugo</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
     <span class="p">(</span><span class="nv">beginning-of-buffer</span><span class="p">)</span>
@@ -239,14 +239,14 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 <p>This is a simplified version of the function I use. If you do not want to export all its linked files as well everytime a file is updated, this much is sufficient.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">(</span><span class="kp">&amp;optional</span> <span class="nv">no-trace-links</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">(</span><span class="kp">&amp;optional</span> <span class="nv">no-trace-links</span><span class="p">)</span>
   <span class="s">&#34;On save export to hugo&#34;</span>
   <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
       <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)))</span>
@@ -257,7 +257,7 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 <p>I used this function just once so far. But it is a needed function nonetheless.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -266,7 +266,7 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
   <span class="s">&#34;&#34;</span>
   <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">org-roam--list-files</span> <span class="nv">org-roam-directory</span><span class="p">))</span>
@@ -281,7 +281,7 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 no-trace-link is true if we do not want to trace the link of the file being exported. Since if you add links to an org roam file, you only need to update the backlinks to it&rsquo;s linked files, So that&rsquo;s exactly what we do.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -297,7 +297,7 @@ no-trace-link is true if we do not want to trace the link of the file being expo
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">()</span>
   <span class="s">&#34;&#34;</span>
   <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
     <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
@@ -318,7 +318,7 @@ no-trace-link is true if we do not want to trace the link of the file being expo
 I prepend a my to it for the sake of not breaking the original function.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -365,7 +365,7 @@ I prepend a my to it for the sake of not breaking the original function.</p>
 </span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-roam-buffer--insert-backlinks</span> <span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-roam-buffer--insert-backlinks</span> <span class="p">()</span>
   <span class="s">&#34;Insert the org-roam-buffer backlinks string for the current buffer.&#34;</span>
   <span class="p">(</span><span class="nb">let</span> <span class="p">(</span><span class="nv">props</span> <span class="nv">file-from</span><span class="p">)</span>
     <span class="p">(</span><span class="nv">if-let*</span> <span class="p">((</span><span class="nv">file-path</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">))</span>
@@ -415,7 +415,7 @@ I prepend a my to it for the sake of not breaking the original function.</p>
 </div><h3 id="sync-only-top-level-files">Sync only top level files</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -424,7 +424,7 @@ I prepend a my to it for the sake of not breaking the original function.</p>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
   <span class="s">&#34;&#34;</span>
   <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
   <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">split-string</span> <span class="p">(</span><span class="nv">string-trim</span> <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;ls &#34;</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;/*.org&#34;</span><span class="p">)))))</span>
@@ -476,13 +476,14 @@ I prepend a my to it for the sake of not breaking the original function.</p>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/running-ipython-inside-a-python-script/" class="prev" rel="prev" title="Running ipython inside a python script"><i class="fas fa-angle-left fa-fw"></i>Running ipython inside a python script</a></div>
+    <div class="post-nav"><a href="/running-ipython-inside-a-python-script/" class="prev" rel="prev" title="Running ipython inside a python script"><i class="fas fa-angle-left fa-fw"></i>Running ipython inside a python script</a>
+            <a href="/a-sinful-smile/" class="next" rel="next" title="A Sinful Smile">A Sinful Smile<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Thank you for supporting me.<i class='far fa-heart fa-fw'></i></div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="sidhartharya.me" target="_blank">Sidharth Arya</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

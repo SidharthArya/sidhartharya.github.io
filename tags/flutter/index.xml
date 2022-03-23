@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Flutter - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/flutter/</link>
+        <description>Flutter - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.github.io/tags/flutter/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter</title>
+    <link>https://sidhartharya.github.io/braindump/20210916121851-flutter/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20210916121851-flutter/</guid>
+    <description><![CDATA[Flutter is Google&rsquo;s UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices from a single codebase.
+Flutter uses Dart to generate native code.
+Features  Stateful Hot Reload Expressive and Flexible UI Native Performance  Widgets Each element on a screen of the flutter app is a widget.
+Types of Widgets Stateless Widgets Stateful Widgets List of Widgets Scaffold  body appbar  Libraries dart:core dart:async dart:math dart:convert dart:html dart:io Packages Connectivity Plus For discovering network connectivity and configuring themselves accordingly.]]></description>
+</item></channel>
+</rss>
