@@ -29,6 +29,6 @@ Let me be reborn with a kinder self,
 
 Let me take away all the pain in the world,
 
-Take rgmy soul straight to hell, for I have been a devil,
+Take my soul straight to hell, for I have been a devil,
 
 But let me take away all the pain, the world is dealt.
