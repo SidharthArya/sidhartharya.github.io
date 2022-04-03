@@ -18,9 +18,9 @@ Antisemitism is [hostility] to, [prejudice] towards, or [discrimination] against
 
 | position | ease | box | interval | due                  |
 |----------|------|-----|----------|----------------------|
-| 0        | 2.20 | 1   | 0.01     | 2021-04-12T03:18:31Z |
+| 0        | 2.20 | 2   | 1.00     | 2022-03-26T21:42:26Z |
 
-{{a large hook}}
+{{a large hook}@0}
 
 
 ### Servility {#servility}
@@ -36,4 +36,3 @@ A deep cut or tear in skin or flesh
 ### Honorifics {#honorifics}
 
 An honorific is a title that conveys esteem, courtesy, or respect for position or rank when used in addressing or referring to a person.
-
