@@ -4,14 +4,7 @@
         <link>https://sidhartharya.github.io/posts/</link>
         <description>All Posts | Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 05 Apr 2022 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>A Circus of attachments</title>
-    <link>https://sidhartharya.github.io/a-circus-of-attachments/</link>
-    <pubDate>Tue, 05 Apr 2022 00:00:00 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>https://sidhartharya.github.io/a-circus-of-attachments/</guid>
-    <description><![CDATA[&ldquo;It&rsquo;s harder to accept the truth when the lies were exactly what you wanted to hear&rdquo; The biggest lesson I have learned is this one quote. I have been a child my entire life, while being an adult, I am still a child. I still high five the leaves every time I pass by them as if they understand my gesture, I still look into the sky and hope to reach a distant star.]]></description>
-</item><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Mar 2022 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>A Sinful Smile</title>
     <link>https://sidhartharya.github.io/a-sinful-smile/</link>
     <pubDate>Thu, 24 Mar 2022 00:00:00 &#43;0530</pubDate>
@@ -90,5 +83,12 @@ Introduction GNU Emacs is truly an amazing software. It can work as a text edito
     <description><![CDATA[Qutebrowser Qutebrowser is the best web browser for developers, hands down. Nothing can compare to the flexibility it offers. Now, ofcourse other web browser must have ways of enabling and disabling various fancy features, but it&rsquo;s much harder to achieve.
 I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here (SidharthArya/.qutebrowser ) on a daily basis.
 The Problem One of the issues i have sometimes is to reach localhost on various ports quickly.]]></description>
+</item><item>
+    <title>Running ipython inside a python script</title>
+    <link>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</link>
+    <pubDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</guid>
+    <description><![CDATA[Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?]]></description>
 </item></channel>
 </rss>
