@@ -20,12 +20,12 @@ Antisemitism is [hostility] to, [prejudice] towards, or [discrimination] against
 |----------|------|-----|----------|----------------------|
 | 0        | 2.20 | 2   | 1.00     | 2022-03-26T21:42:26Z |
 
-a large hook@0
+a large hook
 
 
 ### Servility {#servility}
 
-{{an excessive willingness to serve or please others}}
+an excessive willingness to serve or please others}}
 
 
 ### Laceration {#laceration}
