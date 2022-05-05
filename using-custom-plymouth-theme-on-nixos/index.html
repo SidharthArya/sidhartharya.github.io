@@ -146,11 +146,11 @@ Anyway, let&rsquo;s get back to the code. I create a directory at <code>/etc/nix
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="n">self</span><span class="p">:</span> <span class="n">super</span><span class="p">:</span>
-<span class="p">{</span>
-  <span class="n">adi1090x-plymouth</span> <span class="o">=</span> <span class="n">super</span><span class="o">.</span><span class="n">callPackage</span> <span class="sr">./adi1090x-plymouth</span> <span class="p">{</span> <span class="p">};</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="line"><span class="cl"><span class="n">self</span><span class="p">:</span> <span class="n">super</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">adi1090x-plymouth</span> <span class="o">=</span> <span class="n">super</span><span class="o">.</span><span class="n">callPackage</span> <span class="sr">./adi1090x-plymouth</span> <span class="p">{</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>All it says is, there is a package at the directory <code>./adi1090x-plymouth</code>.</p>
 <p>In the <code>/etc/nixos/configuration.nix</code> file add the following line to activate the overlay.</p>
@@ -159,8 +159,8 @@ Anyway, let&rsquo;s get back to the code. I create a directory at <code>/etc/nix
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="n">nixpkgs</span><span class="o">.</span><span class="n">overlays</span> <span class="err">=</span> <span class="p">[</span> <span class="p">(</span><span class="kn">import</span> <span class="sr">./packages</span><span class="p">)</span> <span class="p">];</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="line"><span class="cl"><span class="n">nixpkgs</span><span class="o">.</span><span class="n">overlays</span> <span class="err">=</span> <span class="p">[</span> <span class="p">(</span><span class="kn">import</span> <span class="sr">./packages</span><span class="p">)</span> <span class="p">];</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="package-recipe">Package Recipe</h2>
 <p>Now let&rsquo;s define a simple package at <code>/etc/nixos/packages/adi1090x-plymouth</code>. We need to create this directory and add a file called <code>default.nix</code> with the following contents.</p>
@@ -195,34 +195,34 @@ Anyway, let&rsquo;s get back to the code. I create a directory at <code>/etc/nix
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="p">{</span>
-  <span class="n">pkgs</span> <span class="o">?</span> <span class="kn">import</span> <span class="sr">&lt;nixpkgs&gt;</span> <span class="p">{}</span>
-<span class="p">}:</span>
-<span class="n">pkgs</span><span class="o">.</span><span class="n">stdenv</span><span class="o">.</span><span class="n">mkDerivation</span> <span class="k">rec</span> <span class="p">{</span>
-  <span class="n">pname</span> <span class="o">=</span> <span class="s2">&#34;adi1090x-plymouth&#34;</span><span class="p">;</span>
-  <span class="n">version</span> <span class="o">=</span> <span class="s2">&#34;0.0.1&#34;</span><span class="p">;</span>
-
-  <span class="n">src</span> <span class="o">=</span> <span class="nb">builtins</span><span class="o">.</span><span class="n">fetchGit</span> <span class="p">{</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/adi1090x/plymouth-themes&#34;</span><span class="p">;</span>
-  <span class="p">};</span>
-
-  <span class="n">buildInputs</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">pkgs</span><span class="o">.</span><span class="n">git</span>
-  <span class="p">];</span>
-
-  <span class="n">configurePhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
-</span><span class="s1">mkdir -p $out/share/plymouth/themes/
-</span><span class="s1">  &#39;&#39;</span><span class="p">;</span>
-
-  <span class="n">buildPhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
-</span><span class="s1">  &#39;&#39;</span><span class="p">;</span>
-
-  <span class="n">installPhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
-</span><span class="s1">  cp -r pack_3/lone $out/share/plymouth/themes
-</span><span class="s1">cat pack_3/lone/lone.plymouth | sed  &#34;s@\/usr\/@$out\/@&#34; &gt; $out/share/plymouth/themes/lone/lone.plymouth
-</span><span class="s1">  &#39;&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pkgs</span> <span class="o">?</span> <span class="kn">import</span> <span class="sr">&lt;nixpkgs&gt;</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}:</span>
+</span></span><span class="line"><span class="cl"><span class="n">pkgs</span><span class="o">.</span><span class="n">stdenv</span><span class="o">.</span><span class="n">mkDerivation</span> <span class="k">rec</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pname</span> <span class="o">=</span> <span class="s2">&#34;adi1090x-plymouth&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">version</span> <span class="o">=</span> <span class="s2">&#34;0.0.1&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">src</span> <span class="o">=</span> <span class="nb">builtins</span><span class="o">.</span><span class="n">fetchGit</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;https://github.com/adi1090x/plymouth-themes&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">buildInputs</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pkgs</span><span class="o">.</span><span class="n">git</span>
+</span></span><span class="line"><span class="cl">  <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">configurePhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">mkdir -p $out/share/plymouth/themes/
+</span></span></span><span class="line"><span class="cl"><span class="s1">  &#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">buildPhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  &#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">installPhase</span> <span class="o">=</span> <span class="s1">&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  cp -r pack_3/lone $out/share/plymouth/themes
+</span></span></span><span class="line"><span class="cl"><span class="s1">cat pack_3/lone/lone.plymouth | sed  &#34;s@\/usr\/@$out\/@&#34; &gt; $out/share/plymouth/themes/lone/lone.plymouth
+</span></span></span><span class="line"><span class="cl"><span class="s1">  &#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This simple packages derivations says get the source files from github. Make a directory <code>$out/share/plymouth/themes</code> (this is where plymouth expects your theme to be at). Then copy the <code>lone</code> theme folder to this directory. Rewrite the <code>lone.plymouth</code> file, adjusted for nixos store path rather than <code>/usr/</code>.
 And that&rsquo;s it for our package.</p>
@@ -237,12 +237,12 @@ And that&rsquo;s it for our package.</p>
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="n">boot</span><span class="o">.</span><span class="n">plymouth</span> <span class="err">=</span> <span class="p">{</span>
-  <span class="n">enable</span> <span class="o">=</span> <span class="no">true</span><span class="p">;</span>
-  <span class="n">themePackages</span> <span class="o">=</span> <span class="p">[</span> <span class="n">pkgs</span><span class="o">.</span><span class="n">adi1090x-plymouth</span> <span class="p">];</span>
-  <span class="n">theme</span> <span class="o">=</span> <span class="s2">&#34;lone&#34;</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-nix" data-lang="nix"><span class="line"><span class="cl"><span class="n">boot</span><span class="o">.</span><span class="n">plymouth</span> <span class="err">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">enable</span> <span class="o">=</span> <span class="no">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">themePackages</span> <span class="o">=</span> <span class="p">[</span> <span class="n">pkgs</span><span class="o">.</span><span class="n">adi1090x-plymouth</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="n">theme</span> <span class="o">=</span> <span class="s2">&#34;lone&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="conclusion">Conclusion</h2>
 <p>Now finally execute the command <code>nixos-rebuild switch</code> and reboot your system. Is your theme working? Please write your comments in the comment section.</p>

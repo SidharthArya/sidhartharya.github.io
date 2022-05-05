@@ -133,10 +133,10 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Some Threaded Code running in the background</span>
-<span class="kn">import</span> <span class="nn">IPython</span>
-<span class="n">IPython</span><span class="o">.</span><span class="n">embed</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Some Threaded Code running in the background</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">IPython</span>
+</span></span><span class="line"><span class="cl"><span class="n">IPython</span><span class="o">.</span><span class="n">embed</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>And you have an ipython shell running.</p>
 <p>Alternatively you can make use of an eval statement</p>
@@ -153,16 +153,16 @@ This is a fairly basic thing to do but i find it incredibly useful. In my case, 
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Put this at the top of your program</span>
-<span class="kn">import</span> <span class="nn">readline</span>
-<span class="k">def</span> <span class="nf">interactive_eval</span><span class="p">():</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">i_eval</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">interactive_eval</span><span class="p">)</span>
-<span class="n">i_eval</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-
-<span class="c1"># Follow up with rest of your program</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Put this at the top of your program</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">readline</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">interactive_eval</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">i_eval</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">interactive_eval</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">i_eval</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Follow up with rest of your program</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Note: Make sure you end with <code>os.system('stty sane')</code>.</p>
 <h2 id="references">References</h2>

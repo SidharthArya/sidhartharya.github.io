@@ -145,19 +145,19 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dash</span><span class="p">)</span>
-<span class="p">(</span><span class="nb">defun</span> <span class="nv">my-elfeed-org-update</span> <span class="p">()</span>
-  <span class="s">&#34;AUtomatically Update the feeds from feeds.org when updated&#34;</span>
-   <span class="p">(</span><span class="nb">setq</span> <span class="nv">my-elfeed-org-last</span> <span class="p">(</span><span class="nb">or</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nf">boundp</span> <span class="ss">&#39;elfeed-feeds</span><span class="p">)</span> <span class="nv">elfeed-feeds</span><span class="p">)</span> <span class="no">nil</span><span class="p">))</span>
-  <span class="p">(</span><span class="nv">elfeed</span><span class="p">)</span>
-  <span class="p">(</span><span class="nb">setq</span> <span class="nv">my-elfeed-org-current</span> <span class="nv">elfeed-feeds</span><span class="p">)</span>
-
-  <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">elfeed-feeds</span> <span class="p">(</span><span class="nv">-difference</span> <span class="nv">my-elfeed-org-current</span> <span class="nv">my-elfeed-org-last</span><span class="p">)))</span>
-<span class="c1">;; You don&#39;t need the line below if you don&#39;t want to see a message about what feeds are being updated</span>
-    <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;%s&#34;</span>  <span class="nv">elfeed-feeds</span><span class="p">)</span>
-    <span class="p">(</span><span class="nf">mapc</span> <span class="nf">#&#39;</span><span class="nv">elfeed-update-feed</span> <span class="p">(</span><span class="nv">elfeed--shuffle</span> <span class="p">(</span><span class="nv">elfeed-feed-list</span><span class="p">))))</span>
-  <span class="p">(</span><span class="nb">setq</span> <span class="nv">elfeed-feeds</span> <span class="nv">my-elfeed-org-current</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;dash</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-elfeed-org-update</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;AUtomatically Update the feeds from feeds.org when updated&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">(</span><span class="nb">setq</span> <span class="nv">my-elfeed-org-last</span> <span class="p">(</span><span class="nb">or</span> <span class="p">(</span><span class="nb">and</span> <span class="p">(</span><span class="nf">boundp</span> <span class="ss">&#39;elfeed-feeds</span><span class="p">)</span> <span class="nv">elfeed-feeds</span><span class="p">)</span> <span class="no">nil</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">elfeed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">my-elfeed-org-current</span> <span class="nv">elfeed-feeds</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">elfeed-feeds</span> <span class="p">(</span><span class="nv">-difference</span> <span class="nv">my-elfeed-org-current</span> <span class="nv">my-elfeed-org-last</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;; You don&#39;t need the line below if you don&#39;t want to see a message about what feeds are being updated</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;%s&#34;</span>  <span class="nv">elfeed-feeds</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">mapc</span> <span class="nf">#&#39;</span><span class="nv">elfeed-update-feed</span> <span class="p">(</span><span class="nv">elfeed--shuffle</span> <span class="p">(</span><span class="nv">elfeed-feed-list</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">elfeed-feeds</span> <span class="nv">my-elfeed-org-current</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>I add the given lines to the top of my <code>feeds.org</code> file.</p>
 <div class="highlight"><div class="chroma">
@@ -167,10 +167,10 @@ That is a really bad idea. Since the more requests you make to a server, the mor
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="c"># Local Variables:</span>
-<span class="c"># after-save-hook: my-elfeed-org-update</span>
-<span class="c"># END:</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-org" data-lang="org"><span class="line"><span class="cl"><span class="c"># Local Variables:</span>
+</span></span><span class="line"><span class="cl"><span class="c"># after-save-hook: my-elfeed-org-update</span>
+</span></span><span class="line"><span class="cl"><span class="c"># END:</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>You will get an unsafe variable prompt every time you save the file thereafter. But, now your feeds will be immediately fetched when you update the feeds.org file.</p>
 <p>Well, actually i don&rsquo;t really use the above file setting. I use <code>(setq-global after-save-hook 'my-elfeed-org-update)</code> in my config since i use different instance for elfeed using my <code>modular-config</code> package.</p>
@@ -194,7 +194,7 @@ That is a really bad idea. Since the more requests you make to a server, the mor
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/elfeed/">elfeed</a>,&nbsp;<a href="/tags/emacs/">emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/rss/">RSS</a>,&nbsp;<a href="/tags/feeds/">feeds</a>,&nbsp;<a href="/tags/hacking/">hacking</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/elfeed/">elfeed</a>,&nbsp;<a href="/tags/emacs/">Emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/rss/">RSS</a>,&nbsp;<a href="/tags/feeds/">feeds</a>,&nbsp;<a href="/tags/hacking/">hacking</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GCP - Tag - Sidharth Arya</title>
+        <link>https://sidhartharya.github.io/tags/gcp/</link>
+        <description>GCP - Tag - Sidharth Arya</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.github.io/tags/gcp/" rel="self" type="application/rss+xml" /><item>
+    <title>Google Cloud</title>
+    <link>https://sidhartharya.github.io/braindump/20211014170901-google_cloud/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20211014170901-google_cloud/</guid>
+    <description><![CDATA[BigQuery ML Vertex AI AICloudGoogle Cloud Functions Cloud Builds Cloud Scheduler Cloud Storage Bucket Dataproc Appengine Cloud Spanner Cloud Shell Cloud Run Customer Managed Encryption Keys Deploy 1  gcloud app deploy   ]]></description>
+</item></channel>
+</rss>

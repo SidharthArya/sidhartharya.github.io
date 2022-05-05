@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Google Cloud - Sidharth Arya</title><meta name="Description" content="Sidharth Arya&#39;s Personal Blog"><meta property="og:title" content="Google Cloud" />
-<meta property="og:description" content="BigQuery ML Vertex AI AICloudGoogle Cloud Functions Cloud Builds Cloud Scheduler Cloud Storage Bucket Dataproc Appengine Deploy 1  gcloud app deploy   " />
+<meta property="og:description" content="BigQuery ML Vertex AI AICloudGoogle Cloud Functions Cloud Builds Cloud Scheduler Cloud Storage Bucket Dataproc Appengine Cloud Spanner Cloud Shell Cloud Run Customer Managed Encryption Keys Deploy 1  gcloud app deploy   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" /><meta property="og:image" content="https://sidhartharya.github.io/logo.png"/><meta property="article:section" content="braindump" />
 
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://sidhartharya.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Google Cloud"/>
-<meta name="twitter:description" content="BigQuery ML Vertex AI AICloudGoogle Cloud Functions Cloud Builds Cloud Scheduler Cloud Storage Bucket Dataproc Appengine Deploy 1  gcloud app deploy   "/>
+<meta name="twitter:description" content="BigQuery ML Vertex AI AICloudGoogle Cloud Functions Cloud Builds Cloud Scheduler Cloud Storage Bucket Dataproc Appengine Cloud Spanner Cloud Shell Cloud Run Customer Managed Encryption Keys Deploy 1  gcloud app deploy   "/>
 <meta name="application-name" content="Sidharth Arya">
 <meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/sidhartharya.github.io\/braindump\/20211014170901-google_cloud\/"
-        },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "braindump","keywords": "Cloud, Google","wordcount":  21 ,
+        },"image": ["https:\/\/sidhartharya.github.io\/images\/Apple-Devices-Preview.png"],"genre": "braindump","keywords": "GCP, Cloud, Google","wordcount":  31 ,
         "url": "https:\/\/sidhartharya.github.io\/braindump\/20211014170901-google_cloud\/","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/sidhartharya.github.io\/images\/avatar.png"},
@@ -110,7 +110,7 @@
             <div class="post-meta-line"><span class="post-author"><a href="sidhartharya.me" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sidharth Arya</a>
 </span></div>
             <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;21 words&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;31 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -126,7 +126,11 @@
     <li><a href="#f45cfba3-b61b-4913-bfa4-0fd3a7f5b4e0">Cloud Scheduler</a></li>
     <li><a href="#d0bda689-d75c-4028-9bd3-d299e7f484a1">Cloud Storage Bucket</a></li>
     <li><a href="#ae5481c1-2cef-402e-8ebd-6ac6f2c4aa40">Dataproc</a></li>
-    <li><a href="#a0ab8690-0c3f-424b-9600-89fba7f7fcb2">Appengine</a>
+    <li><a href="#a0ab8690-0c3f-424b-9600-89fba7f7fcb2">Appengine</a></li>
+    <li><a href="#9aeb479d-a6fb-4142-9871-0028d46f77f9">Cloud Spanner</a></li>
+    <li><a href="#f2e76e94-36d2-4de7-b382-288d4c14b326">Cloud Shell</a></li>
+    <li><a href="#4d6b8a29-7fc9-4d1f-a59b-175e49cf9e27">Cloud Run</a></li>
+    <li><a href="#56bb6bea-e931-47ca-9eaf-921c5343e3f5">Customer Managed Encryption Keys</a>
       <ul>
         <li><a href="#deploy">Deploy</a></li>
       </ul>
@@ -141,14 +145,18 @@
 <h2 id="d0bda689-d75c-4028-9bd3-d299e7f484a1">Cloud Storage Bucket</h2>
 <h2 id="ae5481c1-2cef-402e-8ebd-6ac6f2c4aa40">Dataproc</h2>
 <h2 id="a0ab8690-0c3f-424b-9600-89fba7f7fcb2">Appengine</h2>
+<h2 id="9aeb479d-a6fb-4142-9871-0028d46f77f9">Cloud Spanner</h2>
+<h2 id="f2e76e94-36d2-4de7-b382-288d4c14b326">Cloud Shell</h2>
+<h2 id="4d6b8a29-7fc9-4d1f-a59b-175e49cf9e27">Cloud Run</h2>
+<h2 id="56bb6bea-e931-47ca-9eaf-921c5343e3f5">Customer Managed Encryption Keys</h2>
 <h3 id="deploy">Deploy</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gcloud app deploy
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gcloud app deploy
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -163,13 +171,13 @@
                             <a class="link-to-markdown" href="/braindump/20211014170901-google_cloud/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud" data-via="SidharthArya_" data-hashtags="Cloud,Google"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-hashtag="Cloud"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud" data-via="SidharthArya_" data-hashtags="GCP,Cloud,Google"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-hashtag="GCP"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://sidhartharya.github.io/braindump/20211014170901-google_cloud/" data-title="Google Cloud"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/google/">Google</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/gcp/">GCP</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/google/">Google</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

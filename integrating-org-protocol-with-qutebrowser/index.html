@@ -134,7 +134,7 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
             </div><div class="content" id="content"><p>I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.</p>
 <p>Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.</p>
 <h2 id="org-protocol">Org Protocol</h2>
-<p><em>&ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&quot;</em> From org protocol documentation</p>
+<p><em>&ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.&rdquo;</em> From org protocol documentation</p>
 <p>Basically we can send some information through the org protocol to emacs server.</p>
 <p>Make sure you start an emacs server in your config somewhere, since org protocol requires a server.</p>
 <div class="highlight"><div class="chroma">
@@ -143,9 +143,9 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">server-start</span><span class="p">)</span>
-<span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-protocol</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nv">server-start</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;org-protocol</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>org-protocol</code> is not loaded by default with org. So make sure you require it explicitely too.</p>
 <h2 id="adding-a-handler-for-org-protocol">Adding a handler for org protocol</h2>
@@ -161,14 +161,14 @@ Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger cu
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[Desktop Entry]
-Name=Org-Protocol
-Exec=emacsclient %u
-Icon=emacs-icon
-Type=Application
-Terminal=false
-MimeType=x-scheme-handler/org-protocol
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[Desktop Entry]
+</span></span><span class="line"><span class="cl">Name=Org-Protocol
+</span></span><span class="line"><span class="cl">Exec=emacsclient %u
+</span></span><span class="line"><span class="cl">Icon=emacs-icon
+</span></span><span class="line"><span class="cl">Type=Application
+</span></span><span class="line"><span class="cl">Terminal=false
+</span></span><span class="line"><span class="cl">MimeType=x-scheme-handler/org-protocol
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>All it says is, if there is an address we want to open that begins with <code>org-protocol:/</code> redirect it to the emacsclient. But in case emacs server is not open or there is no handler for the requested protocol, the url will be handled by the next defined handler which would be a web browser. So make sure your emacs server is running. You can find the available org protocols in the variable <code>org-protocol-protocol-alist</code> or <code>org-protocol-protocol-alist-default</code>.</p>
 <h2 id="org-protocol-script">Org Protocol Script</h2>
@@ -196,26 +196,26 @@ MimeType=x-scheme-handler/org-protocol
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/usr/bin/env bash
-</span><span class="cp"></span><span class="nv">PROTOCOL</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
-<span class="nv">TEMPLATE</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span>
-<span class="nv">QUTE_URL</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$QUTE_URL</span> <span class="p">|</span>python -c <span class="s2">&#34;import sys;from urllib.parse import quote;print(quote(sys.stdin.readline()))&#34;</span><span class="k">)</span>
-
-<span class="nv">OUT</span><span class="o">=</span><span class="s2">&#34;org-protocol:/</span><span class="nv">$PROTOCOL</span><span class="s2">&#34;</span>
-<span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;?&#34;</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$PROTOCOL</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;capture&#34;</span> <span class="o">]]</span><span class="p">;</span>
-<span class="k">then</span>
-   <span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;template=</span><span class="nv">$TEMPLATE</span><span class="s2">&#34;</span>
-   <span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;&amp;&#34;</span>
-<span class="k">fi</span>
-
-<span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;url=</span><span class="nv">$QUTE_URL</span><span class="s2">&amp;title=</span><span class="nv">$QUTE_TITLE</span><span class="s2">&amp;body=</span><span class="nv">$QUTE_SELECTED_TEXT</span><span class="s2">&#34;</span>
-<span class="nv">WINDOW</span><span class="o">=</span><span class="k">$(</span>xdo id -N Emacs<span class="k">)</span>
-<span class="c1">#bspc node $WINDOW -g hidden=off</span>
-xdo activate <span class="nv">$WINDOW</span>
-xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s2">&#34;</span>
-<span class="c1"># notify-send &#34;$OUT&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">PROTOCOL</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">TEMPLATE</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QUTE_URL</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$QUTE_URL</span> <span class="p">|</span>python -c <span class="s2">&#34;import sys;from urllib.parse import quote;print(quote(sys.stdin.readline()))&#34;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">OUT</span><span class="o">=</span><span class="s2">&#34;org-protocol:/</span><span class="nv">$PROTOCOL</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;?&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$PROTOCOL</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;capture&#34;</span> <span class="o">]]</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">   <span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;template=</span><span class="nv">$TEMPLATE</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">   <span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;&amp;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">OUT</span><span class="o">+=</span><span class="s2">&#34;url=</span><span class="nv">$QUTE_URL</span><span class="s2">&amp;title=</span><span class="nv">$QUTE_TITLE</span><span class="s2">&amp;body=</span><span class="nv">$QUTE_SELECTED_TEXT</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">WINDOW</span><span class="o">=</span><span class="k">$(</span>xdo id -N Emacs<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#bspc node $WINDOW -g hidden=off</span>
+</span></span><span class="line"><span class="cl">xdo activate <span class="nv">$WINDOW</span>
+</span></span><span class="line"><span class="cl">xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># notify-send &#34;$OUT&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This script does require <code>xdo</code> by baskerville. You should probably uncomment bspc line if you are using <code>bspwm</code>.</p>
 <h2 id="emacs-configuration">Emacs Configuration</h2>
@@ -229,12 +229,12 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
-<span class="o">&#39;</span><span class="p">((</span><span class="s">&#34;P&#34;</span> <span class="s">&#34;Protocol&#34;</span><span class="p">)</span>
-<span class="p">(</span><span class="s">&#34;Pi&#34;</span> <span class="s">&#34;Important&#34;</span><span class="p">)</span>
-<span class="p">(</span><span class="s">&#34;Pit&#34;</span> <span class="s">&#34;Today&#34;</span> <span class="nv">entry</span> <span class="p">(</span><span class="nv">file+headline</span> <span class="s">&#34;~/Documents/Org/Agenda/notes.org&#34;</span> <span class="s">&#34;Websites&#34;</span><span class="p">)</span>
- <span class="s">&#34;* TODO %:annotation \t:important:\n\tSCHEDULED:%(org-insert-time-stamp (org-read-date nil t \&#34;\&#34;))\n:PROPERTIES:\n:Effort: 1h\n:SCORE_ON_DONE: 30\n:END:\n  %i\n  %a&#34;</span><span class="p">)))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
+</span></span><span class="line"><span class="cl"><span class="o">&#39;</span><span class="p">((</span><span class="s">&#34;P&#34;</span> <span class="s">&#34;Protocol&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;Pi&#34;</span> <span class="s">&#34;Important&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="s">&#34;Pit&#34;</span> <span class="s">&#34;Today&#34;</span> <span class="nv">entry</span> <span class="p">(</span><span class="nv">file+headline</span> <span class="s">&#34;~/Documents/Org/Agenda/notes.org&#34;</span> <span class="s">&#34;Websites&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;* TODO %:annotation \t:important:\n\tSCHEDULED:%(org-insert-time-stamp (org-read-date nil t \&#34;\&#34;))\n:PROPERTIES:\n:Effort: 1h\n:SCORE_ON_DONE: 30\n:END:\n  %i\n  %a&#34;</span><span class="p">)))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="browser-configuration">Browser Configuration</h2>
 <p>Now that we have setup everything for the userscript to work. All we have to do is add the corresponding keybindings to qutebrowser.</p>
@@ -244,9 +244,9 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cit&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol capture Pit&#39;</span><span class="p">)</span>
-<span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol store-link&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cit&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol capture Pit&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;cl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript org-protocol store-link&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="conclusion">Conclusion</h2>
 <p>Now capturing to org mode from qutebrowser should be a breeze. Please leave your comments below if you face any issues. Script can be found here in my config: <a href="https://github.com/SidharthArya/.qutebrowser/blob/master/userscripts/org-protocol%20" target="_blank" rel="noopener noreffer">.qutebrowser/org-protocol at master · SidharthArya/.qutebrowser</a>
@@ -286,7 +286,7 @@ xdg-open <span class="s2">&#34;</span><span class="nv">$OUT</span><span class="s
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emacs/">emacs</a>,&nbsp;<a href="/tags/qutebrowser/">qutebrowser</a>,&nbsp;<a href="/tags/orgmode/">orgmode</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/orgprotocol/">orgprotocol</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emacs/">Emacs</a>,&nbsp;<a href="/tags/qutebrowser/">qutebrowser</a>,&nbsp;<a href="/tags/orgmode/">orgmode</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/orgprotocol/">orgprotocol</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

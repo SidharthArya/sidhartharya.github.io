@@ -168,9 +168,9 @@ Please ensure you have the latest <code>ox-hugo</code>.</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">org-hugo-base-dir</span> <span class="o">.</span> <span class="s">&#34;~/.blog&#34;</span><span class="p">)</span>
-         <span class="p">(</span><span class="nv">org-hugo-section</span> <span class="o">.</span> <span class="s">&#34;braindump&#34;</span><span class="p">))))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">((</span><span class="no">nil</span> <span class="o">.</span> <span class="p">((</span><span class="nv">org-hugo-base-dir</span> <span class="o">.</span> <span class="s">&#34;~/.blog&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">org-hugo-section</span> <span class="o">.</span> <span class="s">&#34;braindump&#34;</span><span class="p">))))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li><code>org-hugo-base-dir</code> is where you have your hugo project initialized</li>
@@ -193,17 +193,17 @@ For me i use two sections, one for blog posts and one form braindump from org-ro
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--tag-processing-fn-roam-tags</span><span class="p">(</span><span class="nv">tag-list</span> <span class="nv">info</span><span class="p">)</span>
-  <span class="s">&#34;Process org roam tags for org hugo&#34;</span>
-  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
-      <span class="p">(</span><span class="nf">append</span> <span class="nv">tag-list</span>
-              <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;braindump&#34;</span><span class="p">)</span>
-              <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="p">(</span><span class="nv">org-roam--extract-tags</span><span class="p">)))</span>
-    <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="nv">tag-list</span><span class="p">)</span>
-    <span class="p">))</span>
-
-<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-hugo-tag-processing-functions</span> <span class="ss">&#39;org-hugo--tag-processing-fn-roam-tags</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--tag-processing-fn-roam-tags</span><span class="p">(</span><span class="nv">tag-list</span> <span class="nv">info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Process org roam tags for org hugo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">append</span> <span class="nv">tag-list</span>
+</span></span><span class="line"><span class="cl">              <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;braindump&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="p">(</span><span class="nv">org-roam--extract-tags</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">mapcar</span> <span class="nf">#&#39;downcase</span> <span class="nv">tag-list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-hugo-tag-processing-functions</span> <span class="ss">&#39;org-hugo--tag-processing-fn-roam-tags</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Please note that you can skip line 5 if you don&rsquo;t want to add a braindump tag to it. But i do recommend adding some tag for classifying your roam files separately as well.
 I use this tag in my hugo config to make sure i do not provide rss feeds for my roam files, since they are my unstructured personal notes. I downcase all tags usually to make sure i do not create extra tags because of capitalization issues. You can safely remove the <code>(mapcar #'downcase</code> bit of line 6 and 7 along with one closing bracket from the end of the line, if you prefer not to downcase.</p>
@@ -222,17 +222,17 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-backlinks</span> <span class="p">(</span><span class="nv">backend</span><span class="p">)</span>
-  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">equal</span> <span class="nv">backend</span> <span class="ss">&#39;hugo</span><span class="p">)</span>
-  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">beginning-of-buffer</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;{&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">beginning-of-buffer</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;}&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">end-of-buffer</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">org-roam-buffer--insert-backlinks</span><span class="p">))))</span>
-<span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-export-before-processing-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-backlinks</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-backlinks</span> <span class="p">(</span><span class="nv">backend</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">equal</span> <span class="nv">backend</span> <span class="ss">&#39;hugo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">beginning-of-buffer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;{&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">beginning-of-buffer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">replace-string</span> <span class="s">&#34;}&#34;</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">end-of-buffer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">org-roam-buffer--insert-backlinks</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-export-before-processing-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-backlinks</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>You can probably remove line 4 and 5, i use them since i use org-fc at places, on exporting those files, there are certain issues. But still particularly curly braces, either need to be escaped or removed.</p>
 <h2 id="auto-export-on-save">Auto export on save</h2>
@@ -246,12 +246,12 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">(</span><span class="kp">&amp;optional</span> <span class="nv">no-trace-links</span><span class="p">)</span>
-  <span class="s">&#34;On save export to hugo&#34;</span>
-  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
-      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)))</span>
-<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">(</span><span class="kp">&amp;optional</span> <span class="nv">no-trace-links</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;On save export to hugo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="sync-all-org-roam-files">Sync all org roam files</h2>
 <p>I used this function just once so far. But it is a needed function nonetheless.</p>
@@ -266,14 +266,14 @@ I use this tag in my hugo config to make sure i do not provide rss feeds for my 
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
-  <span class="s">&#34;&#34;</span>
-  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
-  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">org-roam--list-files</span> <span class="nv">org-roam-directory</span><span class="p">))</span>
-    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
-      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
-      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">org-roam--list-files</span> <span class="nv">org-roam-directory</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="misc">Misc</h2>
 <h3 id="my-auto-export-on-save">My Auto export on save</h3>
@@ -297,21 +297,21 @@ no-trace-link is true if we do not want to trace the link of the file being expo
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">()</span>
-  <span class="s">&#34;&#34;</span>
-  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
-    <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
-               <span class="p">(</span><span class="nv">split-string</span>
-                <span class="p">(</span><span class="nv">replace-regexp-in-string</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">)</span> <span class="s">&#34;&#34;</span>
-                                          <span class="p">(</span><span class="nf">expand-file-name</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">)))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span>
-      <span class="p">(</span><span class="nb">unless</span> <span class="nv">no-trace-links</span>
-        <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">links</span> <span class="p">(</span><span class="nv">org-roam--extract-links</span><span class="p">))</span>
-          <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="p">(</span><span class="nf">aref</span> <span class="nv">links</span> <span class="mi">1</span><span class="p">))</span>
-            <span class="p">(</span><span class="nv">org-hugo--org-roam-save-buffer</span> <span class="no">t</span><span class="p">)</span>
-            <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
-      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">))))</span>
-<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">org-roam--org-roam-file-p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
+</span></span><span class="line"><span class="cl">               <span class="p">(</span><span class="nv">split-string</span>
+</span></span><span class="line"><span class="cl">                <span class="p">(</span><span class="nv">replace-regexp-in-string</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">)</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">                                          <span class="p">(</span><span class="nf">expand-file-name</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">)))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">unless</span> <span class="nv">no-trace-links</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">links</span> <span class="p">(</span><span class="nv">org-roam--extract-links</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="p">(</span><span class="nf">aref</span> <span class="nv">links</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">org-hugo--org-roam-save-buffer</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;after-save-hook</span> <span class="nf">#&#39;</span><span class="nv">org-hugo--org-roam-save-buffer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="redefining-the-backlinks-function">Redefining the backlinks function</h3>
 <p>As i mentioned i keep the subdirectories private, and so i don&rsquo;t want them to be exported to hugo. This causes some issues. For now, i don&rsquo;t really need to create a link from top level to any subdirectory files. So the only thing i need to worry about are backlinks in top level directories. I work around them by tweaking the backlinks variable in the <code>org-roam-buffer--insert-backlinks</code>.
@@ -365,52 +365,52 @@ I prepend a my to it for the sake of not breaking the original function.</p>
 </span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-roam-buffer--insert-backlinks</span> <span class="p">()</span>
-  <span class="s">&#34;Insert the org-roam-buffer backlinks string for the current buffer.&#34;</span>
-  <span class="p">(</span><span class="nb">let</span> <span class="p">(</span><span class="nv">props</span> <span class="nv">file-from</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">if-let*</span> <span class="p">((</span><span class="nv">file-path</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">))</span>
-              <span class="p">(</span><span class="nv">titles</span> <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">file-path</span><span class="p">)</span>
-                        <span class="p">(</span><span class="nv">org-roam--extract-titles</span><span class="p">)))</span>
-              <span class="p">(</span><span class="nv">backlinks</span> <span class="p">(</span><span class="nf">delete</span> <span class="ss">&#39;nil</span>
-                                 <span class="p">(</span><span class="nf">mapcar</span>
-                                  <span class="nf">#&#39;</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">a</span><span class="p">)</span>
-                                      <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
-                                               <span class="p">(</span><span class="nv">split-string</span>
-                                                <span class="p">(</span><span class="nv">replace-regexp-in-string</span>
-                                                 <span class="p">(</span><span class="nf">concat</span>
-                                                  <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">))</span> <span class="s">&#34;&#34;</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">a</span><span class="p">))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span> <span class="nv">a</span><span class="p">))</span>
-                                  <span class="p">(</span><span class="nv">org-roam--get-backlinks</span> <span class="p">(</span><span class="nb">push</span> <span class="nv">file-path</span> <span class="nv">titles</span><span class="p">)))))</span>
-              <span class="p">(</span><span class="nv">grouped-backlinks</span> <span class="p">(</span><span class="nv">--group-by</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">0</span> <span class="nv">it</span><span class="p">)</span> <span class="nv">backlinks</span><span class="p">)))</span>
-        <span class="p">(</span><span class="nb">progn</span>
-          <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">l</span> <span class="p">(</span><span class="nf">length</span> <span class="nv">backlinks</span><span class="p">)))</span>
-                    <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;\n\n* %s\n&#34;</span>
-                            <span class="p">(</span><span class="nv">org-roam-buffer--pluralize</span> <span class="s">&#34;Backlink&#34;</span> <span class="nv">l</span><span class="p">))))</span>
-          <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">group</span> <span class="nv">grouped-backlinks</span><span class="p">)</span>
-            <span class="p">(</span><span class="nb">setq</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">group</span><span class="p">))</span>
-            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nf">mapcar</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">row</span><span class="p">)</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">2</span> <span class="nv">row</span><span class="p">))</span> <span class="p">(</span><span class="nf">cdr</span> <span class="nv">group</span><span class="p">)))</span>
-            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nv">seq-sort-by</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">p</span><span class="p">)</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">p</span> <span class="nb">:point</span><span class="p">))</span> <span class="nf">#&#39;&lt;</span> <span class="nv">props</span><span class="p">))</span>
-            <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;** %s\n&#34;</span>
-                            <span class="p">(</span><span class="nv">org-roam-format-link</span> <span class="nv">file-from</span>
-                                                  <span class="p">(</span><span class="nv">org-roam-db--get-title</span> <span class="nv">file-from</span><span class="p">)</span>
-                                                  <span class="s">&#34;file&#34;</span><span class="p">)))</span>
-            <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">prop</span> <span class="nv">props</span><span class="p">)</span>
-              <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;*** &#34;</span>
-                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">outline</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:outline</span><span class="p">)))</span>
-                          <span class="p">(</span><span class="nv">-&gt;</span> <span class="nv">outline</span>
-                              <span class="p">(</span><span class="nv">string-join</span> <span class="s">&#34; &gt; &#34;</span><span class="p">)</span>
-                              <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">file-from</span><span class="p">))</span>
-                        <span class="s">&#34;Top&#34;</span><span class="p">)</span>
-                      <span class="s">&#34;\n&#34;</span>
-                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">content</span> <span class="p">(</span><span class="nf">funcall</span> <span class="nv">org-roam-buffer-preview-function</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))))</span>
-                          <span class="p">(</span><span class="nf">propertize</span>
-                           <span class="p">(</span><span class="nv">s-trim</span> <span class="p">(</span><span class="nv">s-replace</span> <span class="s">&#34;\n&#34;</span> <span class="s">&#34; &#34;</span> <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">content</span> <span class="nv">file-from</span><span class="p">)))</span>
-                           <span class="ss">&#39;help-echo</span> <span class="s">&#34;mouse-1: visit backlinked note&#34;</span>
-                           <span class="ss">&#39;file-from</span> <span class="nv">file-from</span>
-                           <span class="ss">&#39;file-from-point</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))</span>
-                        <span class="s">&#34;&#34;</span><span class="p">)</span>
-                      <span class="s">&#34;\n\n&#34;</span><span class="p">))))</span>
-      <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;\n\n* No backlinks!&#34;</span><span class="p">))))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-roam-buffer--insert-backlinks</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Insert the org-roam-buffer backlinks string for the current buffer.&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">let</span> <span class="p">(</span><span class="nv">props</span> <span class="nv">file-from</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">if-let*</span> <span class="p">((</span><span class="nv">file-path</span> <span class="p">(</span><span class="nf">buffer-file-name</span> <span class="nv">org-roam-buffer--current</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">titles</span> <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">file-path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">(</span><span class="nv">org-roam--extract-titles</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">backlinks</span> <span class="p">(</span><span class="nf">delete</span> <span class="ss">&#39;nil</span>
+</span></span><span class="line"><span class="cl">                                 <span class="p">(</span><span class="nf">mapcar</span>
+</span></span><span class="line"><span class="cl">                                  <span class="nf">#&#39;</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                      <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">&lt;=</span> <span class="p">(</span><span class="nf">length</span>
+</span></span><span class="line"><span class="cl">                                               <span class="p">(</span><span class="nv">split-string</span>
+</span></span><span class="line"><span class="cl">                                                <span class="p">(</span><span class="nv">replace-regexp-in-string</span>
+</span></span><span class="line"><span class="cl">                                                 <span class="p">(</span><span class="nf">concat</span>
+</span></span><span class="line"><span class="cl">                                                  <span class="p">(</span><span class="nf">expand-file-name</span> <span class="nv">org-roam-directory</span><span class="p">))</span> <span class="s">&#34;&#34;</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">a</span><span class="p">))</span> <span class="s">&#34;/&#34;</span><span class="p">))</span> <span class="mi">2</span><span class="p">)</span> <span class="nv">a</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                                  <span class="p">(</span><span class="nv">org-roam--get-backlinks</span> <span class="p">(</span><span class="nb">push</span> <span class="nv">file-path</span> <span class="nv">titles</span><span class="p">)))))</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">grouped-backlinks</span> <span class="p">(</span><span class="nv">--group-by</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">0</span> <span class="nv">it</span><span class="p">)</span> <span class="nv">backlinks</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">progn</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">l</span> <span class="p">(</span><span class="nf">length</span> <span class="nv">backlinks</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;\n\n* %s\n&#34;</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">(</span><span class="nv">org-roam-buffer--pluralize</span> <span class="s">&#34;Backlink&#34;</span> <span class="nv">l</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">group</span> <span class="nv">grouped-backlinks</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">setq</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">car</span> <span class="nv">group</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nf">mapcar</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">row</span><span class="p">)</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">2</span> <span class="nv">row</span><span class="p">))</span> <span class="p">(</span><span class="nf">cdr</span> <span class="nv">group</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">setq</span> <span class="nv">props</span> <span class="p">(</span><span class="nv">seq-sort-by</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">p</span><span class="p">)</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">p</span> <span class="nb">:point</span><span class="p">))</span> <span class="nf">#&#39;&lt;</span> <span class="nv">props</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nf">insert</span> <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;** %s\n&#34;</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">(</span><span class="nv">org-roam-format-link</span> <span class="nv">file-from</span>
+</span></span><span class="line"><span class="cl">                                                  <span class="p">(</span><span class="nv">org-roam-db--get-title</span> <span class="nv">file-from</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                                  <span class="s">&#34;file&#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">prop</span> <span class="nv">props</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;*** &#34;</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">outline</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:outline</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">                          <span class="p">(</span><span class="nv">-&gt;</span> <span class="nv">outline</span>
+</span></span><span class="line"><span class="cl">                              <span class="p">(</span><span class="nv">string-join</span> <span class="s">&#34; &gt; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                              <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">file-from</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                        <span class="s">&#34;Top&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                      <span class="s">&#34;\n&#34;</span>
+</span></span><span class="line"><span class="cl">                      <span class="p">(</span><span class="nv">if-let</span> <span class="p">((</span><span class="nv">content</span> <span class="p">(</span><span class="nf">funcall</span> <span class="nv">org-roam-buffer-preview-function</span> <span class="nv">file-from</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">                          <span class="p">(</span><span class="nf">propertize</span>
+</span></span><span class="line"><span class="cl">                           <span class="p">(</span><span class="nv">s-trim</span> <span class="p">(</span><span class="nv">s-replace</span> <span class="s">&#34;\n&#34;</span> <span class="s">&#34; &#34;</span> <span class="p">(</span><span class="nv">org-roam-buffer-expand-links</span> <span class="nv">content</span> <span class="nv">file-from</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">                           <span class="ss">&#39;help-echo</span> <span class="s">&#34;mouse-1: visit backlinked note&#34;</span>
+</span></span><span class="line"><span class="cl">                           <span class="ss">&#39;file-from</span> <span class="nv">file-from</span>
+</span></span><span class="line"><span class="cl">                           <span class="ss">&#39;file-from-point</span> <span class="p">(</span><span class="nf">plist-get</span> <span class="nv">prop</span> <span class="nb">:point</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                        <span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                      <span class="s">&#34;\n\n&#34;</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">insert</span> <span class="s">&#34;\n\n* No backlinks!&#34;</span><span class="p">))))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="sync-only-top-level-files">Sync only top level files</h3>
 <div class="highlight"><div class="chroma">
@@ -424,14 +424,14 @@ I prepend a my to it for the sake of not breaking the original function.</p>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
-  <span class="s">&#34;&#34;</span>
-  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
-  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">split-string</span> <span class="p">(</span><span class="nv">string-trim</span> <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;ls &#34;</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;/*.org&#34;</span><span class="p">)))))</span>
-    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
-      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
-      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">defun</span> <span class="nv">my-org-hugo-org-roam-sync-all</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">fil</span> <span class="p">(</span><span class="nv">split-string</span> <span class="p">(</span><span class="nv">string-trim</span> <span class="p">(</span><span class="nv">shell-command-to-string</span> <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;ls &#34;</span> <span class="nv">org-roam-directory</span> <span class="s">&#34;/*.org&#34;</span><span class="p">)))))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">with-current-buffer</span> <span class="p">(</span><span class="nv">find-file-noselect</span> <span class="nv">fil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-hugo-export-wim-to-md</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">kill-buffer</span><span class="p">))))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="conclusion">Conclusion</h2>
 <p>Please write your feedbacks in the comment sectin below. I feel the need to break down the coding bits further. Let me know if i should or shouldn&rsquo;t. My exported braindump can be found at <a href="https://sidhartharya.me/braindump/index.html" target="_blank" rel="noopener noreffer">braindump</a>
@@ -470,7 +470,7 @@ I prepend a my to it for the sake of not breaking the original function.</p>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emacs/">emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/org-roam/">org roam</a>,&nbsp;<a href="/tags/ox-hugo/">ox hugo</a>,&nbsp;<a href="/tags/hugo/">hugo</a>,&nbsp;<a href="/tags/blog/">blog</a>,&nbsp;<a href="/tags/website/">website</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emacs/">Emacs</a>,&nbsp;<a href="/tags/org/">org</a>,&nbsp;<a href="/tags/org-roam/">org roam</a>,&nbsp;<a href="/tags/ox-hugo/">ox hugo</a>,&nbsp;<a href="/tags/hugo/">hugo</a>,&nbsp;<a href="/tags/blog/">blog</a>,&nbsp;<a href="/tags/website/">website</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

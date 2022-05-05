@@ -162,9 +162,9 @@ In a nutshell,</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>pass <span class="s2">&#34;Github/PAT&#34;</span> <span class="p">|</span> head -n <span class="m">1</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>pass <span class="s2">&#34;Github/PAT&#34;</span> <span class="p">|</span> head -n <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Say we save it as <code>git_pass.sh</code></p>
 <p>What the script would do get the github personal access token. If the password store is locked ask for the unlock password from the user and then unlock it and get the password.</p>
@@ -176,8 +176,8 @@ In a nutshell,</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">export</span> <span class="nv">GIT_ASKPASS</span><span class="o">=</span><span class="s2">&#34;path_to_script_defined/git_pass.sh&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GIT_ASKPASS</span><span class="o">=</span><span class="s2">&#34;path_to_script_defined/git_pass.sh&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="further-securing">Further Securing</h2>
 <p>The Password Store may still be unlocked, even if you have locked your screen. You may want to hook up the command <code>gpgconf --kill gpg-agent</code> to when your screen is locked.
@@ -190,11 +190,11 @@ I execute a <code>lock.sh</code> for locking the screen, as given below. In orde
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>gpgconf --kill gpg-agent
-<span class="nv">XDG_SEAT_PATH</span><span class="o">=</span><span class="s2">&#34;/org/freedesktop/DisplayManager/Seat0&#34;</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0 slock
-sleep <span class="m">3</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>gpgconf --kill gpg-agent
+</span></span><span class="line"><span class="cl"><span class="nv">XDG_SEAT_PATH</span><span class="o">=</span><span class="s2">&#34;/org/freedesktop/DisplayManager/Seat0&#34;</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0 slock
+</span></span><span class="line"><span class="cl">sleep <span class="m">3</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="references">References</h2>
 <ul>
@@ -234,7 +234,7 @@ sleep <span class="m">3</span>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/security/">security</a>,&nbsp;<a href="/tags/git/">git</a>,&nbsp;<a href="/tags/github/">github</a>,&nbsp;<a href="/tags/pass/">pass</a>,&nbsp;<a href="/tags/password/">password</a>,&nbsp;<a href="/tags/automation/">automation</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/security/">Security</a>,&nbsp;<a href="/tags/git/">git</a>,&nbsp;<a href="/tags/github/">github</a>,&nbsp;<a href="/tags/pass/">pass</a>,&nbsp;<a href="/tags/password/">password</a>,&nbsp;<a href="/tags/automation/">automation</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

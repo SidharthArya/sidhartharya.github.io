@@ -157,9 +157,9 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="nb">echo</span> open localhost:<span class="si">${</span><span class="nv">QUTE_COUNT</span><span class="k">:-</span><span class="nv">8000</span><span class="si">}</span> &gt; <span class="nv">$QUTE_FIFO</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">echo</span> open localhost:<span class="si">${</span><span class="nv">QUTE_COUNT</span><span class="k">:-</span><span class="nv">8000</span><span class="si">}</span> &gt; <span class="nv">$QUTE_FIFO</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
@@ -172,8 +172,8 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;zl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript localhost&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;zl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript localhost&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ol>
@@ -195,14 +195,14 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="k">if</span> <span class="o">[</span> -z <span class="nv">$QUTE_COUNT</span> <span class="o">]</span><span class="p">;</span>
-<span class="k">then</span>
-    <span class="nv">QUTE_COUNT</span><span class="o">=</span><span class="k">$(</span>cat /tmp/qutebrowser-localhost-port<span class="k">)</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> open localhost:<span class="nv">$QUTE_COUNT</span> &gt; <span class="nv">$QUTE_FIFO</span>
-<span class="nb">echo</span> <span class="nv">$QUTE_COUNT</span> &gt;  /tmp/qutebrowser-localhost-port
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">if</span> <span class="o">[</span> -z <span class="nv">$QUTE_COUNT</span> <span class="o">]</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">QUTE_COUNT</span><span class="o">=</span><span class="k">$(</span>cat /tmp/qutebrowser-localhost-port<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> open localhost:<span class="nv">$QUTE_COUNT</span> &gt; <span class="nv">$QUTE_FIFO</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$QUTE_COUNT</span> &gt;  /tmp/qutebrowser-localhost-port
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="list-open-ports-using-dmenu">List open ports using dmenu</h2>
 <p>Okay, the credit for this belongs here: <a href="https://www.reddit.com/r/qutebrowser/comments/nua8ks/an%5Fimproved%5Flocalhost%5Fuserscript/" target="_blank" rel="noopener noreffer">An improved localhost userscript : qutebrowser</a>
@@ -220,16 +220,16 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$1</span> -eq <span class="s1">&#39;list&#39;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">[[</span> -z <span class="nv">$QUTE_COUNT</span> <span class="o">]]</span><span class="p">;</span>
-<span class="k">then</span>
-    <span class="nv">PORTS</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ss -nltp <span class="p">|</span> tail -n +2 <span class="p">|</span>  awk <span class="s1">&#39;{print $4}&#39;</span> <span class="p">|</span> awk -F: <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
-    <span class="nv">QUTE_COUNT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$PORTS</span><span class="s2">&#34;</span> <span class="p">|</span> dmenu <span class="k">)</span>
-<span class="k">fi</span>
-
-<span class="nb">echo</span> open -t localhost:<span class="si">${</span><span class="nv">QUTE_COUNT</span><span class="k">:-</span><span class="nv">8080</span><span class="si">}</span> &gt; <span class="nv">$QUTE_FIFO</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$1</span> -eq <span class="s1">&#39;list&#39;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">[[</span> -z <span class="nv">$QUTE_COUNT</span> <span class="o">]]</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">PORTS</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ss -nltp <span class="p">|</span> tail -n +2 <span class="p">|</span>  awk <span class="s1">&#39;{print $4}&#39;</span> <span class="p">|</span> awk -F: <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">QUTE_COUNT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$PORTS</span><span class="s2">&#34;</span> <span class="p">|</span> dmenu <span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> open -t localhost:<span class="si">${</span><span class="nv">QUTE_COUNT</span><span class="k">:-</span><span class="nv">8080</span><span class="si">}</span> &gt; <span class="nv">$QUTE_FIFO</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Bind this instead, if you want to use the list instead of a default port.</p>
 <div class="highlight"><div class="chroma">
@@ -237,8 +237,8 @@ The Problem One of the issues i have sometimes is to reach localhost on various 
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;zl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript localhost list&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">config</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;zl&#39;</span><span class="p">,</span> <span class="s1">&#39;spawn --userscript localhost list&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="references">References</h2>
 <ul>
