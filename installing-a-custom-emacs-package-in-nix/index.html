@@ -20,9 +20,7 @@ To be honest though, I never loved nix. The first time i tried it was in a 11 ye
 <meta name="twitter:description" content="Recently, i decided to go into full nix mode. So i boot my laptop. Created a 500MB Partition for nixos&rsquo;s root. Added a new dataset to my already existing zfs pool called pool/nix. And i made the switch. For those who don&rsquo;t know what nix is, beware the hacker inside you may be drawn to it.
 To be honest though, I never loved nix. The first time i tried it was in a 11 year old laptop, and the experience was really bad."/>
 <meta name="application-name" content="Sidharth Arya">
-<meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/" /><link rel="prev" href="https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/" /><link rel="next" href="https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/" /><link rel="prev" href="https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/" /><link rel="next" href="https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -41,13 +39,21 @@ To be honest though, I never loved nix. The first time i tried it was in a 11 ye
             },
         "description": ""
     }
-    </script><script data-ad-client="ca-pub-4788308835707864" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    </script><script data-ad-client="ca-pub-4788308835707864" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+            <a href="/" title="Sidharth Arya"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        data-srcset="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 1.5x, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 2x"
+        data-sizes="auto"
+        alt="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        title="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT" />Sidharth Arya</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/braindump/index.html"> Braindump </a><a class="menu-item" href="https://github.com/SidharthArya" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -71,7 +77,14 @@ To be honest though, I never loved nix. The first time i tried it was in a 11 ye
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+                <a href="/" title="Sidharth Arya"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        data-srcset="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 1.5x, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 2x"
+        data-sizes="auto"
+        alt="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        title="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT" />Sidharth Arya</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -220,7 +233,7 @@ I won&rsquo;t speak much about the nix syntax since i am relatively new to nix. 
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/nixos/">nixos</a>,&nbsp;<a href="/tags/nix/">nix</a>,&nbsp;<a href="/tags/emacs/">Emacs</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/nixos/">nixos</a>,&nbsp;<a href="/tags/nix/">nix</a>,&nbsp;<a href="/tags/emacs/">emacs</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

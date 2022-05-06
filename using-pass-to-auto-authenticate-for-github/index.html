@@ -20,9 +20,7 @@ Why use pass instead of SSH  Anyone who can gain access to your computer (physic
 <meta name="twitter:description" content="People often use SSH to avoid entering their username and password while pushing commits to github or gitlab. I like to use this excellent unix password utility called Pass .
 Why use pass instead of SSH  Anyone who can gain access to your computer (physical, or through some form of hacking) can push changes to your github. the gpg-agent locks itself after some time has elapsed You can kill the gpg-agent when you are not not using the machine Github recommends using personal access tokens  A disadvantage though is, you will have to enter your password store password from time to time."/>
 <meta name="application-name" content="Sidharth Arya">
-<meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/" /><link rel="prev" href="https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/" /><link rel="next" href="https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Sidharth Arya"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sidhartharya.github.io/using-pass-to-auto-authenticate-for-github/" /><link rel="prev" href="https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/" /><link rel="next" href="https://sidhartharya.github.io/a-quicker-way-to-reach-localhost-with-qutebrowser/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="google-site-verification" content="1kiaMrbws-PX7eB3xh8iS1DFBTwNFcpy2xmaFXkcLrk" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -41,13 +39,21 @@ Why use pass instead of SSH  Anyone who can gain access to your computer (physic
             },
         "description": ""
     }
-    </script><script data-ad-client="ca-pub-4788308835707864" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+    </script><script data-ad-client="ca-pub-4788308835707864" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+            <a href="/" title="Sidharth Arya"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        data-srcset="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 1.5x, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 2x"
+        data-sizes="auto"
+        alt="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        title="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT" />Sidharth Arya</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/braindump/index.html"> Braindump </a><a class="menu-item" href="https://github.com/SidharthArya" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -71,7 +77,14 @@ Why use pass instead of SSH  Anyone who can gain access to your computer (physic
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Sidharth Arya">Sidharth Arya</a>
+                <a href="/" title="Sidharth Arya"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        data-srcset="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 1.5x, https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT 2x"
+        data-sizes="auto"
+        alt="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT"
+        title="https://render.bitstrips.com/v2/cpanel/10220050-374881595_4-s1-v1.png?transparent=1&amp;palette=1&amp;FEATURE=SNAP_KIT" />Sidharth Arya</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>

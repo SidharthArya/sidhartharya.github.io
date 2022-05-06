@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>algorithms - Tag - Sidharth Arya</title>
+        <title>Algorithms - Tag - Sidharth Arya</title>
         <link>https://sidhartharya.github.io/tags/algorithms/</link>
-        <description>algorithms - Tag - Sidharth Arya</description>
+        <description>Algorithms - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Jun 2021 14:47:53 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/algorithms/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Jun 2021 00:10:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/algorithms/" rel="self" type="application/rss+xml" /><item>
     <title>Algorithms</title>
     <link>https://sidhartharya.github.io/braindump/20220106170427-algorithms/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>

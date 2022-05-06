@@ -4,5 +4,20 @@
         <link>https://sidhartharya.github.io/braindump/</link>
         <description>All braindump | Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 23:00:10 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/braindump/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Jul 2021 13:51:55 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/braindump/" rel="self" type="application/rss+xml" /><item>
+    <title>Visualization Tools</title>
+    <link>https://sidhartharya.github.io/braindump/20220506002903-visualization_tools/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20220506002903-visualization_tools/</guid>
+    <description><![CDATA[Gource Version Control Visualization Tool Works for:
+ Git   Logstalgia a website traffic visualization that replays or streams web-server access logs as a pong-like battle between the web server and an never ending torrent of requests.]]></description>
+</item><item>
+    <title>Virtual Private Cloud</title>
+    <link>https://sidhartharya.github.io/braindump/20220223165025-virtual_private_cloud/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20220223165025-virtual_private_cloud/</guid>
+    <description><![CDATA[A virtual private cloud is an on-demand configurable pool of shared resources allocated within a public cloud environment, providing a certain level of isolation between the different organizations using the resources.]]></description>
+</item></channel>
 </rss>
