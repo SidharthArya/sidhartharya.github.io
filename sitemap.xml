@@ -924,6 +924,7 @@
             <loc>https://sidhartharya.github.io/tags/gcp/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/geography/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220505025022-geography/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20220225174743-git/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/google/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211201172301-google/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211014170901-google_cloud/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -985,6 +986,7 @@
             <loc>https://sidhartharya.github.io/braindump/20220104104223-operations_research/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220104104342-optaplanner/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210809231751-optuna/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20220505140550-pandas/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220110164642-parkinson_s_disease/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220327022447-people/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210727231953-physics/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -997,7 +999,9 @@
             <loc>https://sidhartharya.github.io/braindump/20210916130019-programming_language/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/programming-language/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210722150116-propylene_glycol/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/protocol/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210728121440-protocol/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20220506215444-psychology/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210727104350-python/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210721174451-pytorch/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211026210351-quantum_networks/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -1038,10 +1042,13 @@
             <loc>https://sidhartharya.github.io/braindump/20210726142950-trichology/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210724182838-trimzole/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211027112629-typescript/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/tags/vc/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220505034600-veda/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20220506002609-version_control/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211029103919-versioning/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20210728170812-vim/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20220223165025-virtual_private_cloud/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sidhartharya.github.io/braindump/20220506002903-visualization_tools/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211101142957-vue/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/tags/web/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sidhartharya.github.io/braindump/20211027111454-webpack/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

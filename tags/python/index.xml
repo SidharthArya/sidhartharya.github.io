@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>python - Tag - Sidharth Arya</title>
+        <title>Python - Tag - Sidharth Arya</title>
         <link>https://sidhartharya.github.io/tags/python/</link>
-        <description>python - Tag - Sidharth Arya</description>
+        <description>Python - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
             <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
     <title>Running ipython inside a python script</title>
@@ -11,5 +11,20 @@
     <author>Author</author>
     <guid>https://sidhartharya.github.io/running-ipython-inside-a-python-script/</guid>
     <description><![CDATA[Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?]]></description>
+</item><item>
+    <title>Pandas</title>
+    <link>https://sidhartharya.github.io/braindump/20220505140550-pandas/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20220505140550-pandas/</guid>
+    <description><![CDATA[Tricks Evaluate formula 1 2  formula = &#34;(2*a+b)/c&#34; df.eval(formula)   ]]></description>
+</item><item>
+    <title>Python</title>
+    <link>https://sidhartharya.github.io/braindump/20210727104350-python/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sidhartharya.github.io/braindump/20210727104350-python/</guid>
+    <description><![CDATA[Threading  Python threading allows you to have different parts of your program run concurrently and can simplify your design.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  import logging import threading import time def thread_function(name): logging.info(&#34;Thread %s: starting&#34;, name) time.sleep(2) logging.info(&#34;Thread %s: finishing&#34;, name) if __name__ == &#34;__main__&#34;: format = &#34;%(asctime)s: %(message)s&#34; logging.basicConfig(format=format, level=logging.INFO, datefmt=&#34;%H:%M:%S&#34;) logging.]]></description>
 </item></channel>
 </rss>
