@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>TODO - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.com/tags/todo/</link>
+        <link>https://blog.sidhartharya.com/tags/todo/</link>
         <description>TODO - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.com/tags/todo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://blog.sidhartharya.com/tags/todo/" rel="self" type="application/rss+xml" /><item>
     <title>Gradient Cache</title>
-    <link>https://sidhartharya.com/braindump/20220106164919-gradient_cache/</link>
+    <link>https://blog.sidhartharya.com/braindump/20220106164919-gradient_cache/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/braindump/20220106164919-gradient_cache/</guid>
+    <guid>https://blog.sidhartharya.com/braindump/20220106164919-gradient_cache/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

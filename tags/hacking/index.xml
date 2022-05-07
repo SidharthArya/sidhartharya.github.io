@@ -1,38 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>hacking - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.com/tags/hacking/</link>
+        <link>https://blog.sidhartharya.com/tags/hacking/</link>
         <description>hacking - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.com/tags/hacking/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://blog.sidhartharya.com/tags/hacking/" rel="self" type="application/rss+xml" /><item>
     <title>Running ipython inside a python script</title>
-    <link>https://sidhartharya.com/running-ipython-inside-a-python-script/</link>
+    <link>https://blog.sidhartharya.com/running-ipython-inside-a-python-script/</link>
     <pubDate>Thu, 03 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/running-ipython-inside-a-python-script/</guid>
+    <guid>https://blog.sidhartharya.com/running-ipython-inside-a-python-script/</guid>
     <description><![CDATA[Imagine you are writing a very convoluted program with all sorts of threading magic. You want to continuously test various sections of your program before moving on with the next task. Would you rather write all the functions in the file at the same time and start debugging the code for errors, or would you rather fire up an ipython shell with your program loaded up and available to you?]]></description>
 </item><item>
     <title>A quicker way to reach localhost with qutebrowser</title>
-    <link>https://sidhartharya.com/a-quicker-way-to-reach-localhost-with-qutebrowser/</link>
+    <link>https://blog.sidhartharya.com/a-quicker-way-to-reach-localhost-with-qutebrowser/</link>
     <pubDate>Fri, 04 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/a-quicker-way-to-reach-localhost-with-qutebrowser/</guid>
+    <guid>https://blog.sidhartharya.com/a-quicker-way-to-reach-localhost-with-qutebrowser/</guid>
     <description><![CDATA[Qutebrowser Qutebrowser is the best web browser for developers, hands down. Nothing can compare to the flexibility it offers. Now, ofcourse other web browser must have ways of enabling and disabling various fancy features, but it&rsquo;s much harder to achieve.
 I have a number of scripts that i use on a daily basis in qutebrowser which i maintain here (SidharthArya/.qutebrowser ) on a daily basis.
 The Problem One of the issues i have sometimes is to reach localhost on various ports quickly.]]></description>
 </item><item>
     <title>Automatically fetching newly added feeds in elfeed org file</title>
-    <link>https://sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
+    <link>https://blog.sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
     <pubDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
+    <guid>https://blog.sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
     <description><![CDATA[The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file.]]></description>
 </item><item>
     <title>Using custom plymouth theme on nixos</title>
-    <link>https://sidhartharya.com/using-custom-plymouth-theme-on-nixos/</link>
+    <link>https://blog.sidhartharya.com/using-custom-plymouth-theme-on-nixos/</link>
     <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/using-custom-plymouth-theme-on-nixos/</guid>
+    <guid>https://blog.sidhartharya.com/using-custom-plymouth-theme-on-nixos/</guid>
     <description><![CDATA[Almost anything you can think of to do with your linux system, can possibly be done in nixos. And it would also be reproducible at that. So i set out to get a custom theme for my boot up screen which is usually provided by plymouth in linux. Since we need to add a new theme to the system we should do that by creating a new package for the same.]]></description>
 </item></channel>
 </rss>

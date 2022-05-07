@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>AWS - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.com/tags/aws/</link>
+        <link>https://blog.sidhartharya.com/tags/aws/</link>
         <description>AWS - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.com/tags/aws/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://blog.sidhartharya.com/tags/aws/" rel="self" type="application/rss+xml" /><item>
     <title>Amazon Web Services</title>
-    <link>https://sidhartharya.com/braindump/20220120144324-amazon_web_services/</link>
+    <link>https://blog.sidhartharya.com/braindump/20220120144324-amazon_web_services/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/braindump/20220120144324-amazon_web_services/</guid>
+    <guid>https://blog.sidhartharya.com/braindump/20220120144324-amazon_web_services/</guid>
     <description><![CDATA[Data Lake A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. You can store your data as-is, without having to first structure the data, and run different types of analytics—from dashboards and visualizations to big data processing, real-time analytics, and machine learning to guide better decisions.]]></description>
 </item></channel>
 </rss>

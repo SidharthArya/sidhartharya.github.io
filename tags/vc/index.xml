@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>VC - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.com/tags/vc/</link>
+        <link>https://blog.sidhartharya.com/tags/vc/</link>
         <description>VC - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.com/tags/vc/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://blog.sidhartharya.com/tags/vc/" rel="self" type="application/rss+xml" /><item>
     <title>Git</title>
-    <link>https://sidhartharya.com/braindump/20220225174743-git/</link>
+    <link>https://blog.sidhartharya.com/braindump/20220225174743-git/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/braindump/20220225174743-git/</guid>
+    <guid>https://blog.sidhartharya.com/braindump/20220225174743-git/</guid>
     <description><![CDATA[Git Hooks  pre-commit  ]]></description>
 </item></channel>
 </rss>

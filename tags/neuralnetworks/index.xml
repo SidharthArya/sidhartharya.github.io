@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>NeuralNetworks - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.com/tags/neuralnetworks/</link>
+        <link>https://blog.sidhartharya.com/tags/neuralnetworks/</link>
         <description>NeuralNetworks - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://sidhartharya.com/tags/neuralnetworks/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://blog.sidhartharya.com/tags/neuralnetworks/" rel="self" type="application/rss+xml" /><item>
     <title>Neural Networks</title>
-    <link>https://sidhartharya.com/braindump/20210721174649-neural_networks/</link>
+    <link>https://blog.sidhartharya.com/braindump/20210721174649-neural_networks/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.com/braindump/20210721174649-neural_networks/</guid>
+    <guid>https://blog.sidhartharya.com/braindump/20210721174649-neural_networks/</guid>
     <description><![CDATA[Concepts Fusing Layers Types Graph Neural Networks GNNNeuralNetworks Graoh Neural networks are neural models that capture the dependence of graphs .
 Types   Graph Convolutional Neural Network    Message Passing based  Convolutional Neural Networks Recurrent Neural Networks Convolutional Recurrent Networks GCN Attention Multistage Applications  Recommender Systems  Generative Adversarial Networks CycleGANS DCGANs Conditional GANs StyleGANs StackGANs EditGAN ]]></description>
 </item></channel>
