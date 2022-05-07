@@ -1,39 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>emacs - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.github.io/tags/emacs/</link>
+        <link>https://sidhartharya.com/tags/emacs/</link>
         <description>emacs - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/emacs/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.com/tags/emacs/" rel="self" type="application/rss+xml" /><item>
     <title>Exporting Org Roam notes to hugo</title>
-    <link>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</link>
+    <link>https://sidhartharya.com/exporting-org-roam-notes-to-hugo/</link>
     <pubDate>Mon, 07 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/</guid>
+    <guid>https://sidhartharya.com/exporting-org-roam-notes-to-hugo/</guid>
     <description><![CDATA[Before i start talking gibrish let&rsquo;s give special credits to jethrokuan (Jethro Kuan) for writing the org-roam package and kaushalmodi (Kaushal Modi) for ox-hugo exporter.
 Introduction GNU Emacs is truly an amazing software. It can work as a text editor, a news feed reader, email reader, IDE, and much more. One of the truly amazing things i found on emacs was Org mode . Org mode is really a markup language which has all sorts of amazing features.]]></description>
 </item><item>
     <title>Integrating Org Protocol with Qutebrowser</title>
-    <link>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</link>
+    <link>https://sidhartharya.com/integrating-org-protocol-with-qutebrowser/</link>
     <pubDate>Mon, 14 Jun 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/integrating-org-protocol-with-qutebrowser/</guid>
+    <guid>https://sidhartharya.com/integrating-org-protocol-with-qutebrowser/</guid>
     <description><![CDATA[I don&rsquo;t have a good introduction today. So let&rsquo;s just get to the post.
 Org mode provides something called org protocol in order to let other applications be able to pass their data into the emacs server instance. We exploit this feature of emacs to write a little script which can capture stuff in org mode and store links from the browser.
 Org Protocol &ldquo;org-protocol intercepts calls from emacsclient to trigger custom actions without external dependencies.]]></description>
 </item><item>
     <title>Automatically fetching newly added feeds in elfeed org file</title>
-    <link>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
+    <link>https://sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</link>
     <pubDate>Thu, 01 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
+    <guid>https://sidhartharya.com/automatically-fetching-newly-added-feeds-in-elfeed-org-file/</guid>
     <description><![CDATA[The best Rss or Atom feed reader is elfeed . There is no competition at all in comparison to it, thanks to the excellent programming done by skeeto (Christopher Wellons) . I urge my readers to go through his blog at null program . elfeed-org is a package that makes it simpler to write the list of elfeed feeds you need with tags and categories, etc in an org file.]]></description>
 </item><item>
     <title>Installing a custom emacs package in nix</title>
-    <link>https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/</link>
+    <link>https://sidhartharya.com/installing-a-custom-emacs-package-in-nix/</link>
     <pubDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/</guid>
+    <guid>https://sidhartharya.com/installing-a-custom-emacs-package-in-nix/</guid>
     <description><![CDATA[Recently, i decided to go into full nix mode. So i boot my laptop. Created a 500MB Partition for nixos&rsquo;s root. Added a new dataset to my already existing zfs pool called pool/nix. And i made the switch. For those who don&rsquo;t know what nix is, beware the hacker inside you may be drawn to it.
 To be honest though, I never loved nix. The first time i tried it was in a 11 year old laptop, and the experience was really bad.]]></description>
 </item></channel>

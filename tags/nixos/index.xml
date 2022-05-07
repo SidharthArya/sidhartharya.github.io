@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>nixos - Tag - Sidharth Arya</title>
-        <link>https://sidhartharya.github.io/tags/nixos/</link>
+        <link>https://sidhartharya.com/tags/nixos/</link>
         <description>nixos - Tag - Sidharth Arya</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sidhartharya10@gmail.com (Sidharth Arya)</managingEditor>
-            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.github.io/tags/nixos/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>sidhartharya10@gmail.com (Sidharth Arya)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</lastBuildDate><atom:link href="https://sidhartharya.com/tags/nixos/" rel="self" type="application/rss+xml" /><item>
     <title>Installing a custom emacs package in nix</title>
-    <link>https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/</link>
+    <link>https://sidhartharya.com/installing-a-custom-emacs-package-in-nix/</link>
     <pubDate>Sun, 04 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/installing-a-custom-emacs-package-in-nix/</guid>
+    <guid>https://sidhartharya.com/installing-a-custom-emacs-package-in-nix/</guid>
     <description><![CDATA[Recently, i decided to go into full nix mode. So i boot my laptop. Created a 500MB Partition for nixos&rsquo;s root. Added a new dataset to my already existing zfs pool called pool/nix. And i made the switch. For those who don&rsquo;t know what nix is, beware the hacker inside you may be drawn to it.
 To be honest though, I never loved nix. The first time i tried it was in a 11 year old laptop, and the experience was really bad.]]></description>
 </item><item>
     <title>Using custom plymouth theme on nixos</title>
-    <link>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</link>
+    <link>https://sidhartharya.com/using-custom-plymouth-theme-on-nixos/</link>
     <pubDate>Mon, 12 Jul 2021 00:00:00 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://sidhartharya.github.io/using-custom-plymouth-theme-on-nixos/</guid>
+    <guid>https://sidhartharya.com/using-custom-plymouth-theme-on-nixos/</guid>
     <description><![CDATA[Almost anything you can think of to do with your linux system, can possibly be done in nixos. And it would also be reproducible at that. So i set out to get a custom theme for my boot up screen which is usually provided by plymouth in linux. Since we need to add a new theme to the system we should do that by creating a new package for the same.]]></description>
 </item></channel>
 </rss>
