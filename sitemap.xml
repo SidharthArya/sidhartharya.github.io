@@ -88,10 +88,12 @@
             <loc>https://blog.sidhartharya.com/braindump/20220508223616-bible/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/buddhism/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20210728231228-buddhism/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.sidhartharya.com/braindump/20210917122314-business_logic_component/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220508224844-chinese/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/christianity/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20210728233231-christianity/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220430235235-cigarette/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.sidhartharya.com/braindump/20210916125655-dart/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220226021903-data_structures/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220103121035-database/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220421014845-datasets/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -143,8 +145,11 @@
             <loc>https://blog.sidhartharya.com/braindump/20220507163342-people/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/philosophy/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220323004704-philosophy/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.sidhartharya.com/tags/programming/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.sidhartharya.com/braindump/20210916130019-programming_language/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/programming-language/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220506215444-psychology/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.sidhartharya.com/braindump/20210727104350-python/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220423024110-queuing_theory/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220508222914-quran/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220425112054-research/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -156,6 +161,7 @@
             <loc>https://blog.sidhartharya.com/braindump/20220430191233-string_theory/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220116053112-thanks_for_the_feedback/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220425182515-therapy/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://blog.sidhartharya.com/braindump/20210727104426-threading/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/todo/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/braindump/20220103125346-transformers/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://blog.sidhartharya.com/tags/vc/</loc><lastmod>2022-05-07T03:42:23&#43;05:30</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
