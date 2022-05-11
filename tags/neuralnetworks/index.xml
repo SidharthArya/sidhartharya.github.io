@@ -11,6 +11,6 @@
     <author>Author</author>
     <guid>https://blog.sidhartharya.com/braindump/20210721174649-neural_networks/</guid>
     <description><![CDATA[Concepts Fusing Layers Types Graph Neural Networks GNNNeuralNetworks Graoh Neural networks are neural models that capture the dependence of graphs .
-Types   Graph Convolutional Neural Network    Message Passing based  Convolutional Neural Networks Recurrent Neural Networks Convolutional Recurrent Networks GCN Attention Multistage Applications  Recommender Systems  Generative Adversarial Networks CycleGANS DCGANs Conditional GANs StyleGANs StackGANs EditGAN ]]></description>
+Types   Graph Convolutional Neural Network    Message Passing based    Weisfeiler Lehman Graph Neural Network  Convolutional Neural Networks Recurrent Neural Networks Convolutional Recurrent Networks GCN Attention Multistage Applications  Recommender Systems  Generative Adversarial Networks CycleGANS DCGANs Conditional GANs StyleGANs StackGANs EditGAN ]]></description>
 </item></channel>
 </rss>

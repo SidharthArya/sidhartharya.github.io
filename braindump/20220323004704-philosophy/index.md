@@ -25,3 +25,6 @@ Functionalism is a theory about the nature of mental states. Based on a theory g
 
 The belief in nothing
 Life is meaningless. Everything in meaningless.
+
+
+## Taoism {#c1abf886-9f2c-4af2-980a-4716aa5e8f3c}

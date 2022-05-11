@@ -25,6 +25,10 @@ Graoh Neural networks are neural models that capture the dependence of [graphs](
 
 -  Message Passing based
 
+<!--list-separator-->
+
+-  Weisfeiler Lehman Graph Neural Network
+
 
 ### Convolutional Neural Networks {#7947dad5-fb28-479e-9167-ebeb092e504f}
 
